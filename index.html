@@ -1,0 +1,1944 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="拼豆仓库">
+  <title>拼豆仓库</title>
+  <link rel="manifest" href="data:application/manifest+json;base64,eyJuYW1lIjogIuaLvOixhuS7k+W6kyIsICJzaG9ydF9uYW1lIjogIuaLvOixhuS7k+W6kyIsICJkZXNjcmlwdGlvbiI6ICJNQVJEIDIyMSDoibIgKyDoh6rliJvoibLmi7zosYblupPlrZjnrqHnkIbvvIzmiavmj4/lm77nurjoh6rliqjorqHnrpfnlKjph48iLCAic3RhcnRfdXJsIjogIi4vaW5kZXguaHRtbCIsICJzY29wZSI6ICIuLyIsICJkaXNwbGF5IjogInN0YW5kYWxvbmUiLCAiYmFja2dyb3VuZF9jb2xvciI6ICIjZjVmN2ZiIiwgInRoZW1lX2NvbG9yIjogIiNmZmZmZmYiLCAibGFuZyI6ICJ6aC1DTiIsICJpY29ucyI6IFt7InNyYyI6ICJkYXRhOmltYWdlL3BuZztiYXNlNjQsaVZCT1J3MEtHZ29BQUFBTlNVaEVVZ0FBQU1BQUFBREFDQUlBQUFEZHZ2dFFBQUFIY1VsRVFWUjRuTzNjdlc0a1JSU0c0ZDRXNGljam5ZaHNFMThBUXJRUWpwQ0l2QmV3OFY0QkdTUkF4aFVRY3dFNFFpSXlRcFlRRitDRWpNZ3BFU3hFU0F4eTRQNnJxZStjNmEvYTd4dTIxVFhCUERvelZiMDd6ejc4OHMrT3FMYSsrazRpQUpFYUU0aWtBRVJTQUNJcEFKRVVnRWdLUUNRRklKSUNFRWtCaUtRQVJGSUFJaWtBa1JTQVNBcEFKQVVna2dJUVNRR0lwQUJFVWdBaUtRQ1JGSUJJQ2tBa0JTQ1NBaEJKQVlpa0FFUlNBQ0lwQUpFVWdFZ0tRQ1FGSUpJQ0VFa0JpS1FBUkZJQUlpa0FrUlNBU0FwQUpQVkdaOS90UHgrTUx3NXYvcEw0aXE5ZVRsNGZ2djB1NzBYdjN2OW1mUEhpMTg4Njc1N1ovbEw5cEp0VVNYTnVVaVhkVGJscFNKSWpvRUk2Z1l6SzZRUXl1aXVqWTg2bzM0R2U2cnNVUGNxTlhaV2U2cnVleWdSU0VGU1BJZ1ZCM1J3S1FlQXppdm85NlRsMUhWMVBkK0lpVVNQRVp4UzVBRHAvSVhyQ2wycXVmay9qcDN5MThMZjh0bURCMkxGaE1vVDZuZWtwV1ROcFlOd3VMcHZ4ZmpzWTJoNFFOZDNHdTdDNjAwTGxqTEh1dEZBOFk3eXJPaTFzNG95eGdRazBkcEQ2SE9PSTRKR0Q4Wlh3TGtZT2ZQYnFEUU9hczVKbmFBRktucUdMR1N2K2hyWUV0UHBKdEt4azFkQjQvVFBzdDI5SEw3SDZTYlNzWk5YUXRsK2xmU2RReVl3Sm4wT3JNeVo4Q0YwVXpCam5PZVFMaUpvSVFDUUZJSklDRU8wVVVORWpyZWpISUt2YnRQQjkzRjNCSHNyaGtZVWpvSXA5ZVBsZnAwOGdrdzhEdTZtWEVQZmg0aW5BMDUxQXkwb3lIc0d1enBpOFk2UzdHU1hPczZjTlFOUG5nV2w2L2wvLzFjdEhWc1pYd3JzYldmSFhzLzNEMUR3TkM1K1BlUlNHK1kvSUpBMmJuekUyTUlISXVlMEJaVHdXWFhtSWx2TlZlbGhjTm1OVWJENStMQUNGR3lwNmlCWnRhQ2hZTVBiOWR0RGpBbWlUQWcwTithY0R0cmtBaWhwQ0o2MFQ4c1lQcHl3U05UWk14by9GTGl4cVUxWk5VTm1VRGJVRXF6ZGxQblM4SnBEb1FCbGcxUWdHWVlEVk9YRFQ0emlCSHVMWE9jenB1QU42aU44SGNxNEJRT1NjM1hjZ2Fpc0FrUlNBU0FwQXRQZGZhZjM1NzgvSEZ6OTY2K3U4Vjd6OTRwM0o2OE5YZitXOTZOVnZFeGV2bjNmbStlN0NKdDJrU3Bwemt5cnBhc3BOUTVJY0FSWFNDV1JVVGllUTBWVVpIWE5HL1E3MFZOK2w2RkZ1N0tyMFZOLzFoQUFwRHVydVZSQjB0YmNyRHR3TTlmdlFVN2VDcUtkdUVWMkFsYUYrTjNwT1hTZEV6NmxMUmIzM1BvYjZQZWtwWHkxUVQvbUNzZSs2aWFGK1ozcEsxZ3pYVTdKc3h2dnRZR2g3UU5SMC9mN0d6L0xLU2VObmVmRzhVYkg1RUdyZ1VjYjRuRENQM2R3NVlTcTd1WFBDelhIc0FkRGtFZlB4WWg2ajhSSHo4VW9lbyt2bnN4Zk5HVzM1RWJZcVlQa0J4ZXJqaS9INkpRSVdIbENVUEx1NEhiM0Vxb0RsQnhTcmp5KzJGY2FYYU5vcG9KTG5vK0gvcUdOMXhvVC9pNDdyNTAwK1EyMEFFRFVSZ0VnS1FMUlRRQ1c3OVBDZC9PbzJMWHduZjFXd2gzTGV5ZnNDb2liYUVsREZRVTc1WHlmWHJ6dklLZm5Ud2t1SUJ6bmlNZEpUUDRrK0tqbnpvNHdqbEhNK3lyajZUd21QTXJJNno4T3ZSNTNuK1ZjcjMzVk12d1BsL2ZldXVaVlQvMi9YTUxONDNxZk01bWVNZkltbXhnRmxES0hsTlpPRzBMQzRiTWFvMkh6OFdBQUtOMVN5V3JpaG9XREIyUGZiUVk4TG9FQkQ1ZXNFR2hxS2w0cDYxMDMwR0FFS01YVHFDaUdHaGhNWDBkOTdIejFlZ0VSRGRmZUtob2FxMnhVQlZucnNBRlU3VU9SVkd4b0VmSFVPM1BTWS9qckhNWDdleFp5T082Q0grSUVwNXhvQVJNN1pmUWVpdGdJUVNRR0lwQUJFdS80SFpWM1gvZmpIVCtPTG43ejdjZDRyM3I5NFBYbjk4UDNiZVM5NjgrbDc0NHVYUC96ZWVlZTdDNXQwa3lwcHprMnFwSnNwTncxSmNnUlVTQ2VRVVRtZFFFWTNaWFRNR2ZVNzBGTjlsNkpIdWJHcjBsTjkxMU9aUUFxQzZsR2tJS2liUXlFSWZFWlJ2eWM5cDY2ajYrbE9YQ1JxaFBpTUloZEE1eTlFVC9oU3pkWHZhZnlVcnhiK2x0OFhMQmc3Tmt5R1VMOHpQU1ZySmcyTSs4VmxNOTV2QjBQYkE2S20yM2dYVm5kYXFKd3gxcDBXaW1lTU4xV25oVTJjTVRZd2djWU9VcDlqSEJFOGNqQytFdDdseUlIUFhyMWhRSE5XOGd3dFFNa3pkRGxqeGQvUWxvQldQNG1XbGF3YUdxOS9odjMyL2VnbFZqK0pscFdzR3RyMnE3VHZCQ3FaTWVGemFIWEdoQStoeTRJWjR6eUhmQUZSRXdHSXBBQkVVZ0NpblFJcU9TME1md3l5dWswTDM4ZmRGT3loSEI1Wk9BS3EySWVYLzNWeS9lekR3RzdxSmNSOXVIZ0s4SFFuMExLU2pFZXdxek1tN3hqcFprYUo4K3hwQTlDa2xUdzl4KzVmdkg1a1pYd2x2SnVSRlg4OTJ6OU16ZE93OFBtWVIrRXcveEdacEdIek04WUdKaEE1dHoyZ2pNZWl5MnNtZlpVK0xDNmJNU28ySHo4V2dNSU5sYXdXYnVoUXNHRHMrKzJneHdYUUpnVWFPdVNmRHRqbUFpaHFDSjIwVHNnYmZ6aGxrYWl4WVRKK0xIWmhVWnV5YW9MS3B1eFFTN0I2VStaRHgyc0NpUTZVQVZhTjRDQU1zRG9IYm5vY0o5QkQvRHFIT1IxM1FBL3grMERPTlFDSW5MUDdEa1J0QlNDU0FoQkpBWWlrQUVSU0FDSXBBSkVVZ0VnS1FDUUZJSklDRUVrQmlLUUFSRklBSWlrQWtSU0FTQXBBSkFVZ2tnSVFTUUdJcEFCRVVnQWlLUUNSRklCSUNrQWtCU0NTQWhCSkFZaWtBRVJTQUNJcEFKRVVnRWdLUUNRRklKSUNFRWtCaUtRQVJGSUFJaWtBa1JTQXFGUDZGMEtsR3hmYjBJd3ZBQUFBQUVsRlRrU3VRbUNDIiwgInNpemVzIjogIjE5MngxOTIiLCAidHlwZSI6ICJpbWFnZS9wbmciLCAicHVycG9zZSI6ICJhbnkifSwgeyJzcmMiOiAiZGF0YTppbWFnZS9wbmc7YmFzZTY0LGlWQk9SdzBLR2dvQUFBQU5TVWhFVWdBQUFnQUFBQUlBQ0FJQUFBQjdHa090QUFBVjJrbEVRVlI0bk8zZHI2NXVWMWNHOEsva0JLakRvbkFZTG9DUU5nUVVDUW91QU0wVjRLaHBQOGNWb0xrQVVDUW9DR2xDdUFBTURvVkZ0WUJDYk1SSlQ5dTgrMzNubnpIRzgvdnBmZmFaWTRubm1YT3Q3TFUrKytMcjczNEJRSjVmdWIwQUFPNVFBQUNoRkFCQUtBVUFFRW9CQUlSU0FBQ2hGQUJBS0FVQUVFb0JBSVJTQUFDaEZBQkFLQVVBRUVvQkFJUlNBQUNoRkFCQUtBVUFFRW9CQUlSU0FBQ2hGQUJBS0FVQUVFb0JBSVJTQUFDaEZBQkFLQVVBRUVvQkFJUlNBQUNoRkFCQUtBVUFFRW9CQUlSU0FBQ2hGQUJBS0FVQUVFb0JBSVJTQUFDaEZBQkFLQVVBRUVvQkFJUlNBQUNoRkFCQUtBVUFFRW9CQUlSU0FBQ2hGQUJBS0FVQUVFb0JBSVJTQUFDaEZBQkFLQVVBRUVvQkFJUlNBQUNoRkFCQUtBVUFFRW9CQUlSU0FBQ2hGQUJBS0FVQUVFb0JBSVJTQUFDaEZBQkFLQVVBRUVvQkFJUlNBQUNoRkFCQUtBVUFFRW9CQUlSU0FBQ2hGQUJBS0FVQUVFb0JBSVJTQUFDaEZBQkFLQVVBRUVvQkFJUlNBQUNoRkFCQUtBVUFFRW9CQUlSU0FBQ2hGQUJBS0FVQUVFb0JBSVJTQUFDaEZBQkFLQVVBRUVvQkFJUlNBQUNoRkFCQUtBVUFFRW9CQUlSU0FBQ2hGQUJBS0FVQUVFb0JBSVJTQUFDaEZBQkFLQVVBRUVvQkFJUlNBQUNoRkFCQUtBVUFFRW9CQUlSU0FBQ2hGQUJBS0FVQUVFb0JBSVJTQUFDaEZBQkFLQVVBRUVvQkFJVDZjSHNCUE9uYi8vMjlSMzdzeTEvOUY1ZjQvNi9Zbi8vWmc1Zml5Ny8rR3hmdHpiLzk3bDg5Y2lsKzUxLy93aFhyNkxNdnZ2N3U5aHBZbWZnL0w2MFBIZy85bjVKV0JnOG0vcy9UQjEwb2dJamNqMnFDMTBNL3NBeVc1UDZuTkVGeENpQXUrZ2ZYd0w3b0gxd0RtNkwvWTJxZ0xBV1FtUHZ6bXVCTTlFK3FnUU81L3lsTlVJMENTSS8rN2pWd1B2cTcxOENWNlArWUdxaERBVlJ4UGYzYmRjRGQ2RzlhQTlmVC80ME9LRUlCM0ZjaytodlZRSjNvYjFRRFJhTC9ZMnJnT244SWRsbkI5Qys3cXNycFgzbGhOZE8vN0txaUtJQ2JTdWRzeWJWVkR0bXl5NnVjczVYWGxzQXRvRHRxeG12eDIwRTE0N1h5dmFCRzhlcDIwQlVLNElKRzZWK2tBN3BFZjZrYWFKVCtiM1RBZVc0Qm5kWXUvYSt2dVdQNlgxOTJ1L1J2dXVidUZNQlJIZFAvN3NxYnB2L2R4ZmROMHI0cmIwb0JuTk0zL1crdHYzWDYzeHFoZTRaMlgzOHZDdUNRN3VsL2Zvb0I2WDkra0JucE9XT0tGaFFBUUNnRmNNS003Zi9KV2Nacy8wK09NMm5qUEdtV3loVEFkcFBTLzh4RXc5TC96RkR6RW5QZVJBVXBnTDNtcGYvdXVVYW0vKzdScG1ibDFMbnFVQUFBb1JUQVJsTzMvL3VtRzd6OTN6Zmc3RzN5N09tdVV3Qzd6RTcvbkJtTFM4akhoQmx2VVFCVU1YNzdIelVtTFNpQUxYSzJ4cXNtallyRlZjUG1iSTF6SmoxTUFRQ0VVZ0FBb1JUQWVqbjNmMWJORzNYL1o5WElhWGRGMHVZOTQ4T2gvNGV6WDJ0Sks2RWxuMm9KN0tFWHY5WWlsTHZ6UmJERmppWHZnMS9wcXJhZWk3SDcrQ2U2Q2k3cFZ2SSsrSld1YXV2aFFVNEEvYndyYXQ5K09QeEE4TjZjZmZ2NThBUEJ1NkwyN1ljZENOcnhES0NaNXpiYTF6L3FlOUhUdSt6ckgvVzk2TG1OdHUxNU93cGdwZDBiN1ZkeWZIY0hQRGY3N2wzMml5Ryt1d09lRzMvM1J2dVZITi9kQVE0WmF5bUFObDVQOExSendKTDRUanNIdko3Z3pnR05LSUFlVm1WM1RnY3NETzZjRGxpVjNUcWdDd1hRd05yVVR1aUE1WkdkMEFGclUxc0h0S0FBQUVJcGdPcFBnSGRzMkRjZEF0NTdCVFk5QWQ2MFc5LzBhOTk3RVRZOUJkMnhZZDkwQ1BBY2VDRUZBQkJLQVFDRVVnQ2w3WHRnTy9WUjhOYW50Vk1mQmU5N1lPdFJjSEVLQUNDVUFnQUlwUUFBUWlrQWdGQUtBQ0NVQWdBSXBRQkMzeTg5OVJNeFc5OHZQZlVUTWZ2K3R0WmY3UmFuQUFCQ0tRQ0FVQXBnMmh2V2J2M09KNjVBa2RlcjNmMjE3NzBJamQ2dzF1aTlkYkVVQUVBb0JkREEyZzM3MU1lL1czZnJVeC8vN3R1d2UvemJnZ0xvWVZWcUo2VC84c2hPU1ArMXFTMzl1MUFBYmJ5ZTNUbnB2ekM0YzlKL1ZYWkwvMFlVUUtkM0xMK1M0THZULzduWmQ3OWcrY1g0M3AzK3o0Mi8reW5vS3dtK08vMDlBVjVMQVRUelhJNm43ZjJYaEhqYTN2LzFITGYzYitmRDdRWHdaSm8vdU9OT2p2NGZSUG5qMiszazZQOUJtais0NHhiOVRYMzJ4ZGZmM1Y3RE5JY3o5MGVib01JYUhuYzRjSCtxQ1lvczQwR0hNL2RIbTZEQ0duaUZFMEI3OXZqdnZtSTIrTzluanorU1p3RHJUZjNjN3I1NXAzNXJkK3ZJYWR2aHRIblBVQUFBb1JRQVFDZ0ZzRVhPWGFCVmswYmRCVm8xYk01ZGtaeEpEMU1BVkJIU0FTRmowb0lDMkNYaEVKQXdZM0VKVytPRUdXOVJBQnZOenNjZDA0M2ZIZThZY0hZK3pwN3VPZ1VBRUVvQjdEWDFFTEJ2cnNHSGdIMmpUZDBtVDUyckRnV3czYndPMkQzUnlBN1lQZFM4ckp3M1VVRUs0SVJKSFhCbWxtRWRjR2FjU1lrNWFaYktGQUJBS0FWd3lJeER3TWtweGh3Q1RnNHlZK004WTRvV0ZNQTUzVHZnL1BvSGRNRDVFYnFuWi9mMTk2SUFqdXJiQWJkVzNyb0RiaTIrYjRiMlhYbFRDdUMwamgxd2Q4MU5PK0R1c2pzbWFjYzFkK2VMWUhjMCtvcExuY2JxOGlHWE9vM1Y2Q3N1MHY4S0JYQlQ4UnFvRS8yTk9xQk8rbmVwQWRGL2tWdEFOeFZNMk9Kckt4aXY5WmRYT1dFcnJ5MkJBcmlzYU02V1hGWGxrSzI4c0xJNVczTlZVZHdDcXFMSTdhREswVi8yZGxEbDZLOTVPMGowRjZFQUNybmVBWTNTdjBnTk5JcitPaDBnL2V0UUFPVmNxWUdPMFgrM0JqcEcvL1VhRVAzVktJRG9KdWllKzFkcW9IdjBuMjhDdVYrV0FnaXRnV0hSZjZZR2hrWC9nUm9RL2NVcGdLd21HSno3bThwZ2NPanZhd0s1MzRVQ0dONEhhWW0vcEF6U1F2LzFQcEQ0VFNrQWdGRCtFQXdnbEFJQUNLVUFBRUlwQUlCUUNnQWdsQUlBQ0tVQUFFSXBBSUJRQ2dBZ2xBSUFDS1VBQUVJcEFJQlFDZ0FnbEFJQUNQWGg5Z0o0MGovL3oxOCs4bU8vLzJ1L2RJbmZmUHZWNXc5ZWlpKy8rZDVGZS9Nbi8vN1FsZmk3MzNiQld2STlnR21KLy9QUyt1RHgwUDhwYVdYd1lPTC9QSDNRaFFLSXlQMm9Kbmc5OUFQTFlFbnVmMG9URktjQTRxSi9jQTNzaS83Qk5iQXAraittQnNwU0FJbTVQNjhKemtUL3BCbzRrUHVmMGdUVktJQmFycVIvNnc0NEgvMERhdUJLK3IvUkFhVW9nQ291Um4vVEdyZ2IvVTFyNEdMMGYwd05GS0VBN2lzUy9iMXFvRTc2ZCttQUl0SC9NVFZ3blFLNHJHRDZGKytBYXRIZm9nWUtwdjhiSFhDWHZ3UytxV3o2bDExYjVmUXZ1N3l5NlY5OGJRbWNBTzZvR2EvRmp3STE0N1h5T2FCUnZEb0tYT0VFY0VHajlLK3oyaTdwWDJlcGpkSy8zV3JIY0FJSXpkTkc1NEFpZWRycktOQTBUNTBERG5NQ09LcHArbDljZWQvMHY3ajRwdW5mZXVWTktZQnorcWIvalBXSDZKNmgzZGZmaXdLZ3J0YmIvekVqTUpnQ09HVEc5dm5rRkdPaTgrUWdNN2JQTTZab1FRR2NNQ1A5VDg0eUp2MVBqak1wTnlmTlVwa0MyRzVTK3ArWmFGajZueGxxWG1MT202Z2dCYkRYdlBTZlBWZFRVN055Nmx4MUtBQnFHYm45SHo4YVRTbUFqV1p2azNkTU56NGlkd3c0ZTVzOGU3cnJGQUJBS0FXd3krenQvNDRaeDIvL2Q0eVpzRUZPbVBFV0JRQVFTZ0Zza2JEOVh6dHB5UFovN2JBNVcrT2NTUTlUQUFDaEZNQjZPZHYvVmZOR2JmOVhqWnkyS1U2Yjk0d1BoLzRmenI2cFA2MkVscnltUDdDSFhueFR2MUR1emdkaEZqdVd2QTkrb2FYYWVpN0c3dU9mWnltNHBGdkorK0FYV3FxdGh3YzVBZlR6cnFoOSsyRUhnbmRGN1pmZmZPODA4SzZvZmZ0aEI0SjJQQU5vNXJtTmRwMFB1NS8zNVRmZlA3SFJmdTVmamZIY1J0djJ2QjBGME1rck9aN1pBUytHZUdZSHZKTGpPcUFYQmJEUzFqc3RyeWY0MWc1NGJ2YXRkMXFXeFBmV0RuaHUvSzEzV2w1UDhLMGQ0QzdUV2dxZ2gxWFpuWE1PV0JqY09lZUFWZG50SE5DRkFtaGdiV3JuZEFBWFUxc0h0S0FBR0dqNW5qM25FRUFVQlZEOUFjQ09EZnVtUThCN3I4Q21Cd0Nid25yVHIzM3ZSZGgwRTN6SGhuM1RJY0JqZ0lVVUFFQW9CUUFRU2dHVXR1K0I3ZFJId1Z0djFrOTlFckR2Z2ExSHdjVXBBSUJRQ2dBZ2xBSUFDS1VBQUVJcEFJQlFDZ0FnbEFJQUNLVUFRdDh2UGZVYllWdmZMejMxTTJIN1hxN2d0UTNGS1FDQVVBb0FJSlFDbVBhS3pWdS84NGtyVU9UOW1uZC83WHN2UXFOWGJEWjZjV2tzQmNCQXk4TjY2dDEvd2ltQUJ0WnUyS2MrL3FYVWh0M2ozeFlVUUErclVqc24vUmZ1MlhPMi82dFNXL3Azb1FEYXZHUDU5ZXplbXY3UHpiNzFCY3RMZ250citqODMvdGFiNEs5bjk5YjA5d0JnTFFYUXlTc0puclAzWHhqZk9Ydi9WUWx1NzkrTEFtam11UnpQVFA4MzMzNzErUk01L3R5L0d1TzVISmYrN1h5NHZRQ2VUUE1IYjdra1IvL0h2djNxODhmdnR5Ukgvdy9TL01GYkxxSy9xYysrK1BxNzIydVk1bkRtL21nVFZGakQ0dzRIN2s4MVFaRmxQT2h3NXY1b0UxUllBNjl3QW1qUEh2KzliUENmWUk4L2ttY0E2MDM5M3ZxK2VhZCtiSDNyeUduYjRiUjV6MUFBQUtFVXdCWTVoNEJWazBZZEFsWU5tN01wenBuME1BVUFFRW9CN0pKd0NGZzdZOGdoWU8yWUNWdmpoQmx2VVFBQW9SVEFSck1QQVR1bUczOEkyREhnN0EzeTdPbXVVd0RVTXJnREJvOUdVd3BncjZtSGdLbHpOVFYxbXp4MXJqb1V3SGJ6c25MM1JDTjN5cnVIbXBlVjh5WXFTQUdjTUtrRHpzd3lyQVBPakRNcE1TZk5VcGtDT0dSR0I1eWNZa3dIbkJ4a1JtN09tS0lGQlVCZEF6cGd3QWdNcGdETzZYNEk2TDcrRU4yM3o5M1gzNHNDT0twdmh0NWFlZXNkOUszRjk4M1F2aXR2eWdkaExtajNCdjhLdmRYckpmNFZlcXZkRy95bC8zbE9BS0Y1Mm02MUZTSzExMUo3NVdtdjFZN2hCSEJUOGFOQWtlanZkUTRva3Y2TmpnS2kveUluZ0pzS0ptenh0UldNMS9yTHE1eXdsZGVXd0FuZ3ZvTG5nSnJwWC9rb1VEUDZpNThEcFA5MUNxQ0tJalZRUC9vTGRrRDk5SzlXQTZLL0NBVlF5OFVhYUJUOWRXcWdVZlFYcVFIUlg0b0NLT2RLQnpSTi80czEwRFQ2NzNhQTlLOUdBVVEzUWZmY3YxSUQzYVAvZkJQSS9iSVVRR2dOREl2K016VXdMUG9QMUlEb0wwNEJaRFhCNE56ZlZBYURRMzlmRThqOUxoVEE4RDVJUy93bFpaQVcrcS8zZ2NSdlNnRUFoUEtYd0FDaEZBQkFLQVVBRUVvQkFJUlNBQUNoRkFCQUtBVUFFRW9CQUlSU0FBQ2hGQUJBS0FVQUVFb0JBSVJTQUFDaEZBQkFxQSszRjhDVC91Ry8vdW1SSC91ajMvZ0RsL2pOZi83cGZ6OTRLWDd6YjMvZFJYdnpqMy84VzQ5Y2lqLzgrLzl3eFRyeVBZQnBpZi96MHZyZzhkRC9LV2xsOEdEaS96eDkwSVVDaU1qOXFDWjRQZlFEeTJCSjduOUtFeFNuQU9LaWYzQU43SXYrd1RXd0tmby9wZ2JLVWdDSnVUK3ZDYzVFLzZRYU9KRDduOUlFMVNpQTlPanZYZ1Bubzc5N0RWeUovbytwZ1RvVVFCWFgwNzlkQjl5Ti9xWTFjRDM5MytpQUloVEFmVVdpdjFFTjFJbitSalZRSlBvL3BnYXU4NGRnbHhWTS83S3JxcHorbFJkV00vM0xyaXFLQXJpcGNzN1dYRnZsa0MyN3ZNbzVXM2x0Q2R3Q3VxTm12QmEvSFZRelhpdmZDMm9VcjI0SFhhRUFMbWlVL2tVNm9FdjBsNnFCUnVuL1JnZWM1eGJRYWUzUy8vcWFPNmIvOVdXM1MvK21hKzVPQVJ6Vk1mM3ZycnhwK3Q5ZGZOOGs3YnZ5cGhUQU9YM1QvOWI2VzZmL3JSRzZaMmozOWZlaUFBN3BudjducHhpUS91Y0htWkdlTTZab1FRRUFoRklBSjh6WS9wK2NaY3oyLytRNGt6Yk9rMmFwVEFGc055bjl6MHcwTFAzUEREVXZNZWROVkpBQzJHdGUrdStlYTJUNjd4NXRhbFpPbmFzT0JRQVFTZ0ZzTkhYN3YyKzZ3ZHYvZlFQTzNpYlBudTQ2QmJETDdQVFBtYkc0aEh4TW1QRVdCVUFWNDdmL1VXUFNnZ0xZSW1kcnZHclNxRmhjTld6TzFqaG4wc01VQUVBb0JRQVFTZ0dzbDNQL1o5VzhVZmQvVm8yY2RsY2tiZDR6UGh6NmZ6ajd0WmEwRWxyeXFaYkFIbnJ4YXkxQ3VUdGZCRnZzV1BJKytKV3VhdXU1R0x1UGY2S3I0Skp1SmUrRFgrbXF0aDRlNUFUUXo3dWk5dTJId3c4RTc4M1p0NThQUHhDOEsycmZmdGlCb0IzUEFKcDVicU45L2FPK0Z6Mjl5NzcrVWQrTG50dG8yNTYzb3dCVzJyM1JmaVhIZDNmQWM3UHYzbVcvR09LN08rQzU4WGR2dEYvSjhkMGQ0SkN4bGdKbzQvVUVUenNITEludnRIUEE2d251SE5DSUF1aGhWWGJuZE1EQzRNN3BnRlhaclFPNlVBQU5yRTN0aEE1WUh0a0pIYkEydFhWQUN3b0FJSlFDcVA0RWVNZUdmZE1oNEwxWFlOTVQ0RTI3OVUyLzlyMFhZZE5UMEIwYjlrMkhBTStCRjFJQUFLRVVBRUFvQlZEYXZnZTJVeDhGYjMxYU8vVlI4TDRIdGg0RkY2Y0FBRUlwQUlCUUNnQWdsQUlBQ0tVQUFFSXBBSUJRQ3FDMGZlK1hudnFKbUszdmw1NzZpWmg5ZjF2cnIzYUxVd0FBb1JRQVFDZ0ZNTzBOYTdkKzV4TlhvTWpyMWU3KzJ2ZGVoRVp2V0d2MDNycFlDZ0FnbEFKb1lPMkdmZXJqMzYyNzlhbVBmL2R0MkQzK2JVRUI5TEFxdFJQU2YzbGtKNlQvMnRTVy9sMG9nRFpleis2YzlGOFkzRG5wdnlxN3BYOGpDcURUTzVaZlNmRGQ2Zi9jN0x0ZnNQeGlmTzlPLytmRzMvMFU5SlVFMzUzK25nQ3ZwUUNhZVM3SDAvYitTMEk4YmUvL2VvN2IrN2Z6NGZZQ2VETE5IOXh4SjBmL0Q2TDg4ZTEyY3ZUL0lNMGYzSEdML3FZKysrTHI3MjZ2WVpyRG1mdWpUVkJoRFk4N0hMZy8xUVJGbHZHZ3c1bjdvMDFRWVEyOHdnbWdQWHY4OTdMQmY0STkva2llQWF3MzlYTzcrK2FkK3EzZHJTT25iWWZUNWoxREFRQ0VVZ0FBb1JUQUZqbDNnVlpOR25VWGFOV3dPWGRGY2lZOVRBRlFSVWdIaEl4SkN3cGdsNFJEUU1LTXhTVnNqUk5tdkVVQmJEUTdIM2RNTjM1M3ZHUEEyZms0ZTdyckZBQkFLQVd3MTlSRHdMNjVCaDhDOW8wMmRaczhkYTQ2Rk1CMjh6cGc5MFFqTzJEM1VQT3ljdDVFQlNtQUV5WjF3SmxaaG5YQW1YRW1KZWFrV1NwVEFBQ2hGTUFoTXc0Qko2Y1ljd2c0T2NpTWpmT01LVnBRQU9kMDc0RHo2eC9RQWVkSDZKNmUzZGZmaXdJNHFtOEgzRnA1Nnc2NHRmaStHZHAzNVUwcGdOTTZkc0RkTlRmdGdMdkw3cGlrSGRmY25TK0MzZEhvS3k1MUdxdkxoMXpxTkZhanI3aEkveXNVd0UzRmE2Qk85RGZxZ0RycDM2VUdSUDlGYmdIZFZEQmhpNit0WUx6V1gxN2xoSzI4dGdRSzRMS2FPVnR6VlpWRHR2TEN5dVpzelZWRmNRdW9paUszZ3lwSGY5bmJRWldqditidElORmZoQUlvNUhvSE5Fci9JalhRS1BycmRJRDByME1CbEhPbEJqcEcvOTBhNkJqOTEydEE5RmVqQUtLYm9IdnVYNm1CN3RGL3ZnbmtmbGtLSUxRR2hrWC9tUm9ZRnYwSGFrRDBGNmNBc3BwZ2NPNXZLb1BCb2IrdkNlUitGd3BnZUIra0pmNlNNa2dML2RmN1FPSTNwUUFBUXZsRE1JQlFDZ0FnbEFJQUNLVUFBRUlwQUlCUUNnQWdsQUlBQ0tVQUFFSXBBSUJRQ2dBZ2xBSUFDS1VBQUVJcEFJQlFDZ0FnbEFJQUNLVUFBRUlwQUlCUUNnQWdsQUlBQ0tVQUFFSXBBSUJRQ2dBZ2xBSUFDS1VBQUVJcEFJQlFDZ0FnbEFJQUNLVUFBRUlwQUlCUUNnQWdsQUlBQ0tVQUFFSXBBSUJRQ2dBZ2xBSUFDS1VBQUVJcEFJQlFDZ0FnbEFJQUNLVUFBRUlwQUlCUUNnQWdsQUlBQ0tVQUFFSXBBSUJRQ2dBZ2xBSUFDS1VBQUVJcEFJQlFDZ0FnbEFJQUNLVUFBRUlwQUlCUUNnQWdsQUlBQ0tVQUFFSXBBSUJRQ2dBZ2xBSUFDS1VBQUVJcEFJQlFDZ0FnbEFJQUNLVUFBRUlwQUlCUUNnQWdsQUlBQ0tVQUFFSXBBSUJRQ2dBZ2xBSUFDS1VBQUVJcEFJQlFDZ0FnbEFJQUNLVUFBRUlwQUlCUUNnQWdsQUlBQ0tVQUFFSXBBSUJRQ2dBZ2xBSUFDS1VBQUVJcEFJQlFDZ0FnbEFJQUNLVUFBRUlwQUlCUUNnQWdsQUlBQ0tVQUFFSXBBSUJRQ2dBZ2xBSUFDS1VBQUVJcEFJQlFDZ0FnbEFJQUNLVUFBRUlwQUlCUUNnQWdsQUlBQ0tVQUFFSXBBSUJRQ2dBZ2xBSUFDS1VBQUVJcEFJQmZaUG8vWlgyLzdoWFNZQjBBQUFBQVNVVk9SSzVDWUlJPSIsICJzaXplcyI6ICI1MTJ4NTEyIiwgInR5cGUiOiAiaW1hZ2UvcG5nIiwgInB1cnBvc2UiOiAiYW55IG1hc2thYmxlIn1dfQ==">
+  <link rel="icon" href="data:image/png;base64,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">
+  <link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAIAAADdvvtQAAAHcUlEQVR4nO3cvW4kRRSG4d4W4icjnYhsE18AQrQQjpCIvBew8V4BGSRAxhUQcwE4QiIyQpYQF+CEjMgpESxESAxy4P6rqe+c6a/a7xu21TXBPDozVb07zz788s+OqLa++k4iAJEaE4ikAERSACIpAJEUgEgKQCQFIJICEEkBiKQARFIAIikAkRSASApAJAUgkgIQSQGIpABEUgAiKQCRFIBICkAkBSCSAhBJAYikAERSACIpAJEUgEgKQCQFIJICEEkBiKQARFIAIikAkRSASApAJPVGZ9/tPx+MLw5v/pL4iq9eTl4fvv0u70Xv3v9mfPHi1886757Z/lL9pJtUSXNuUiXdTblpSJIjoEI6gYzK6QQyuiujY86o34Ge6rsUPcqNXZWe6rueygRSEFSPIgVB3RwKQeAzivo96Tl1HV1Pd+IiUSPEZxS5ADp/IXrCl2qufk/jp3y18Lf8tmDB2LFhMoT6nekpWTNpYNwuLpvxfjsY2h4QNd3Gu7C600LljLHutFA8Y7yrOi1s4oyxgQk0dpD6HOOI4JGD8ZXwLkYOfPbqDQOas5JnaAFKnqGLGSv+hrYEtPpJtKxk1dB4/TPst29HL7H6SbSsZNXQtl+lfSdQyYwJn0OrMyZ8CF0UzBjnOeQLiJoIQCQFIJICEO0UUNEjrejHIKvbtPB93F3BHsrhkYUjoIp9ePlfp08gkw8Du6mXEPfh4inA051Ay0oyHsGuzpi8Y6S7GSXOs6cNQNPngWl6/l//1ctHVsZXwrsbWfHXs/3D1DwNC5+PeRSG+Y/IJA2bnzE2MIHIue0BZTwWXXmIlvNVelhcNmNUbD5+LACFGyp6iBZtaChYMPb9dtDjAmiTAg0N+acDtrkAihpCJ60T8sYPpywSNTZMxo/FLixqU1ZNUNmUDbUEqzdlPnS8JpDoQBlg1QgGYYDVOXDT4ziBHuLXOczpuAN6iN8Hcq4BQOSc3XcgaisAkRSASApAtPdfaf3578/HFz966+u8V7z94p3J68NXf+W96NVvExevn3fm+e7CJt2kSppzkyrpaspNQ5IcARXSCWRUTieQ0VUZHXNG/Q70VN+l6FFu7Kr0VN/1hAApDuruVRB0tbcrDtwM9fvQU7eCqKduEV2AlaF+N3pOXSdEz6lLRb33Pob6PekpXy1QT/mCse+6iaF+Z3pK1gzXU7JsxvvtYGh7QNR0/f7Gz/LKSeNnefG8UbH5EGrgUcb4nDCP3dw5YSq7uXPCzXHsAdDkEfPxYh6j8RHz8Uoeo+vnsxfNGW35EbYqYPkBxerji/H6JQIWHlCUPLu4Hb3EqoDlBxSrjy+2FcaXaNopoJLno+H/qGN1xoT/i47r500+Q20AEDURgEgKQLRTQCW79PCd/Oo2LXwnf1Wwh3LeyfsCoibaElDFQU75XyfXrzvIKfnTwkuIBzniMdJTP4k+Kjnzo4wjlHM+yrj6TwmPMrI6z8OvR53n+Vcr33VMvwPl/feuuZVT/2/XMLN43qfM5meMfImmxgFlDKHlNZOG0LC4bMao2Hz8WAAKN1SyWrihoWDB2PfbQY8LoEBD5esEGhqKl4p61030GAEKMXTqCiGGhhMX0d97Hz1egERDdfeKhoaq2xUBVnrsAFU7UORVGxoEfHUO3PSY/jrHMX7exZyOO6CH+IEp5xoARM7ZfQeitgIQSQGIpABEu/4HZV3X/fjHT+OLn7z7cd4r3r94PXn98P3beS968+l744uXP/zeeee7C5t0kyppzk2qpJspNw1JcgRUSCeQUTmdQEY3ZXTMGfU70FN9l6JHubGr0lN911OZQAqC6lGkIKibQyEIfEZRvyc9p66j6+lOXCRqhPiMIhdA5y9ET/hSzdXvafyUrxb+lt8XLBg7NkyGUL8zPSVrJg2M+8VlM95vB0PbA6Km23gXVndaqJwx1p0WimeMN1WnhU2cMTYwgcYOUp9jHBE8cjC+Et7lyIHPXr1hQHNW8gwtQMkzdDljxd/QloBWP4mWlawaGq9/hv32/eglVj+JlpWsGtr2q7TvBCqZMeFzaHXGhA+hy4IZ4zyHfAFREwGIpABEUgCinQIqOS0Mfwyyuk0L38fdFOyhHB5ZOAKq2IeX/3Vy/ezDwG7qJcR9uHgK8HQn0LKSjEewqzMm7xjpZkaJ8+xpA9CklTw9x+5fvH5kZXwlvJuRFX892z9MzdOw8PmYR+Ew/xGZpGHzM8YGJhA5tz2gjMeiy2smfZU+LC6bMSo2Hz8WgMINlawWbuhQsGDs++2gxwXQJgUaOuSfDtjmAihqCJ20TsgbfzhlkaixYTJ+LHZhUZuyaoLKpuxQS7B6U+ZDx2sCiQ6UAVaN4CAMsDoHbnocJ9BD/DqHOR13QA/x+0DONQCInLP7DkRtBSCSAhBJAYikAERSACIpAJEUgEgKQCQFIJICEEkBiKQARFIAIikAkRSASApAJAUgkgIQSQGIpABEUgAiKQCRFIBICkAkBSCSAhBJAYikAERSACIpAJEUgEgKQCQFIJICEEkBiKQARFIAIikAkRSAqFP6F0KlGxfb0IwvAAAAAElFTkSuQmCC">
+  <style>
+:root {
+  --bg: #f5f7fb;
+  --card: #ffffff;
+  --line: #e5e9f0;
+  --text: #1f2937;
+  --muted: #8a94a6;
+  --blue: #3b82f6;
+  --blue-d: #2563eb;
+  --dark: #111827;
+  --green: #10b981;
+  --green-bg: #d9f5ea;
+  --green-t: #047857;
+  --red: #e11d48;
+  --red-bg: #ffe4ea;
+  --warn: #f59e0b;
+  --r: 14px;
+  color-scheme: light;
+}
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+html, body { margin: 0; height: 100%; }
+body {
+  background: var(--bg); color: var(--text);
+  font: 15px/1.45 -apple-system, "PingFang SC", "Noto Sans SC", "Microsoft YaHei", system-ui, sans-serif;
+  display: flex; flex-direction: column; overflow: hidden;
+}
+#page { flex: 1; display: flex; flex-direction: column; min-height: 0; max-width: 760px; width: 100%; margin: 0 auto; }
+button, input, textarea { font: inherit; color: inherit; }
+button { cursor: pointer; }
+h1 { font-size: 22px; margin: 0; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+h3 { margin: 16px 0 8px; font-size: 16px; }
+label { display: block; font-weight: 600; font-size: 14px; margin: 14px 0 6px; }
+label.check { font-weight: 400; display: flex; align-items: center; gap: 8px; margin: 10px 0; }
+.muted { color: var(--muted); }
+.red { color: var(--red); }
+.green { color: var(--green); }
+.warn { color: var(--warn); }
+.center { text-align: center; }
+.grow { flex: 1; min-width: 0; }
+.hint { color: var(--muted); font-size: 13px; margin: 8px 0; }
+.empty { text-align: center; color: var(--muted); padding: 40px 16px; }
+.mt { margin-top: 24px; }
+
+/* 顶栏 */
+.top {
+  display: flex; align-items: center; gap: 10px;
+  padding: calc(env(safe-area-inset-top) + 12px) 16px 12px;
+  background: #fff; border-bottom: 1px solid var(--line);
+}
+.scroll { flex: 1; overflow-y: auto; padding: 12px 16px 24px; -webkit-overflow-scrolling: touch; }
+.bottom-panel { background: #fff; border-top: 1px solid var(--line); padding: 10px 16px; display: flex; flex-direction: column; gap: 8px; }
+
+/* 按钮 */
+.btn {
+  border: 1px solid var(--line); background: #fff; border-radius: 12px;
+  padding: 10px 14px; font-weight: 600; white-space: nowrap;
+}
+.btn:active { transform: scale(.97); }
+.btn.primary { background: var(--blue); border-color: var(--blue); color: #fff; box-shadow: 0 4px 12px rgba(59,130,246,.3); }
+.btn.green-bg { background: var(--green); border-color: var(--green); box-shadow: 0 4px 12px rgba(16,185,129,.3); }
+.btn.green { background: var(--green-bg); border-color: #b5ead3; color: var(--green-t); }
+.btn.red { background: var(--red-bg); border-color: #ffc2d0; color: var(--red); }
+.btn.danger { background: var(--red); border-color: var(--red); color: #fff; }
+.btn.sm { padding: 6px 10px; font-size: 13px; border-radius: 10px; }
+.btn.xs { padding: 3px 8px; font-size: 12px; border-radius: 8px; }
+.btn.full { width: 100%; margin-top: 10px; }
+.btn:disabled { opacity: .45; }
+.icon-btn { border: 1px solid var(--line); background: #fff; border-radius: 12px; width: 42px; height: 42px; font-size: 20px; flex: none; }
+.icon-btn.sm { width: 32px; height: 32px; font-size: 14px; border-radius: 9px; }
+.plain { border: 0; background: none; padding: 0; }
+.row-btns { display: flex; gap: 10px; margin-top: 10px; }
+.row-btns > * { flex: 1; }
+
+/* 筛选 chips */
+.chips { display: flex; gap: 8px; overflow-x: auto; padding: 4px 0 8px; scrollbar-width: none; }
+.chips::-webkit-scrollbar { display: none; }
+.chips.wrap { flex-wrap: wrap; overflow: visible; }
+.chip { border: 1px solid var(--line); background: #fff; border-radius: 999px; padding: 7px 14px; font-weight: 600; white-space: nowrap; flex: none; }
+.chip.on { background: #eaf2ff; border-color: #bcd4fb; color: var(--blue-d); }
+.chip.on-dark { background: var(--dark); border-color: var(--dark); color: #fff; }
+.chip.on-warn { background: #fff5e0; border-color: #fcd98a; color: #b45309; }
+.chip.sq { border-radius: 10px; min-width: 42px; padding: 7px 10px; }
+.letters { position: sticky; top: -12px; background: var(--bg); z-index: 2; padding-top: 8px; }
+
+/* 色号色块 */
+.swatch {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 56px; height: 34px; padding: 0 8px; border-radius: 10px;
+  font-weight: 700; font-size: 14px; box-shadow: inset 0 0 0 1px rgba(0,0,0,.08), 0 2px 4px rgba(0,0,0,.06);
+}
+.swatch.big { min-width: 72px; height: 52px; font-size: 18px; border-radius: 14px; }
+
+/* 统计 */
+.stats { display: grid; grid-template-columns: repeat(3, 1fr); background: #fff; border: 1px solid var(--line); border-radius: var(--r); margin: 6px 0 12px; overflow: hidden; }
+.stat { text-align: center; padding: 10px 4px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.stat:nth-child(3n) { border-right: 0; }
+.stat small { display: block; color: var(--muted); font-size: 12px; }
+.stat b { font-size: 20px; }
+.sort-bar { display: flex; gap: 12px; align-items: center; padding: 4px 4px 8px; border-bottom: 1px solid var(--line); }
+.sort { border: 0; background: none; font-weight: 700; color: var(--muted); padding: 4px 0; }
+.sort.on { color: var(--text); }
+.sort span { color: var(--blue); }
+
+/* 列表 */
+.list { display: flex; flex-direction: column; gap: 8px; }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: var(--r); }
+.stock-row { display: flex; align-items: center; gap: 12px; padding: 10px 14px; }
+.stock-row .used { color: #c3c9d4; font-size: 20px; font-weight: 700; min-width: 56px; text-align: right; }
+.stock-row .qty { font-size: 22px; font-weight: 800; min-width: 70px; text-align: right; }
+.qty.warn { color: var(--warn); }
+.qty.neg, .qty.red { color: var(--red); }
+.group-head { display: flex; align-items: center; gap: 10px; padding: 10px 4px 2px; font-size: 18px; }
+.pill { background: #fff; border: 1px solid var(--line); border-radius: 999px; padding: 0 10px; font-size: 13px; color: var(--muted); }
+
+/* 修改库存 */
+.edit-list { display: flex; flex-direction: column; }
+.edit-row { display: flex; align-items: center; gap: 6px; padding: 8px 0; border-bottom: 1px solid var(--line); overflow-x: auto; }
+.edit-row .cur { min-width: 44px; text-align: center; font-weight: 700; }
+.mode { border: 1px solid; border-radius: 10px; width: 40px; height: 38px; font-weight: 800; flex: none; }
+.madd { background: var(--green-bg); border-color: #b5ead3; color: var(--green-t); }
+.msub { background: var(--red-bg); border-color: #ffc2d0; color: var(--red); }
+.mset { background: #eaf2ff; border-color: #bcd4fb; color: var(--blue-d); }
+.input { width: 100%; border: 1px solid var(--line); border-radius: 12px; padding: 10px 12px; background: #fff; outline: none; }
+.input:focus { border-color: var(--blue); box-shadow: 0 0 0 3px rgba(59,130,246,.15); }
+.input.num { width: 84px; text-align: right; flex: none; }
+.edit-row .btn.sm { flex: none; }
+.summary { border: 1px solid var(--line); border-radius: 12px; padding: 10px; text-align: center; color: var(--muted); font-weight: 600; font-size: 14px; background: #fff; }
+textarea.input { resize: vertical; }
+
+/* 弹层 */
+.sheet-wrap { position: fixed; inset: 0; background: rgba(15,23,42,.45); z-index: 50; display: flex; align-items: flex-end; justify-content: center; animation: fade .15s; }
+.sheet { background: #fff; width: 100%; max-width: 760px; max-height: 88vh; border-radius: 20px 20px 0 0; display: flex; flex-direction: column; animation: up .2s; }
+.sheet-head { display: flex; align-items: center; justify-content: space-between; padding: 14px 16px; border-bottom: 1px solid var(--line); font-size: 17px; }
+.sheet-body { padding: 12px 16px calc(env(safe-area-inset-bottom) + 20px); overflow-y: auto; }
+@keyframes up { from { transform: translateY(40px); opacity: 0; } }
+@keyframes fade { from { opacity: 0; } }
+.pick-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(64px, 1fr)); gap: 8px; margin-top: 8px; }
+.pick { border: 0; background: none; padding: 0; }
+.pick .swatch { width: 100%; }
+.quick-head { display: flex; align-items: center; gap: 20px; margin-bottom: 12px; }
+.big { font-size: 24px; }
+.color-row { display: flex; gap: 10px; }
+.color { width: 56px; height: 44px; border: 1px solid var(--line); border-radius: 12px; padding: 2px; background: #fff; }
+.full-img { width: 100%; }
+
+.toast { position: fixed; left: 50%; bottom: 100px; transform: translateX(-50%) translateY(20px); background: rgba(17,24,39,.92); color: #fff; padding: 10px 18px; border-radius: 999px; opacity: 0; pointer-events: none; transition: .2s; z-index: 100; max-width: 90vw; }
+.toast.show { opacity: 1; transform: translateX(-50%); }
+
+/* 底部导航 */
+#nav { display: flex; background: #fff; border-top: 1px solid var(--line); padding-bottom: env(safe-area-inset-bottom); }
+#nav a { flex: 1; text-align: center; padding: 8px 0 6px; color: var(--muted); text-decoration: none; font-size: 12px; font-weight: 600; }
+#nav a span { display: block; font-size: 22px; filter: grayscale(1); opacity: .6; }
+#nav a.on { color: var(--blue); }
+#nav a.on span { filter: none; opacity: 1; }
+
+/* 项目 */
+.tabs { display: grid; grid-template-columns: repeat(4, 1fr); background: #fff; border: 1px solid var(--line); border-radius: var(--r); overflow: hidden; }
+.tab { border: 0; border-right: 1px solid var(--line); background: none; padding: 10px 0; }
+.tab:last-child { border-right: 0; }
+.tab b { display: block; font-size: 24px; }
+.tab small { color: #4b5563; font-weight: 600; }
+.tab.on { color: var(--blue); box-shadow: inset 0 -3px 0 var(--blue); }
+.tab.on small { color: var(--blue); }
+.toolbar { display: flex; gap: 8px; margin: 12px 0 6px; align-items: center; }
+.seg { display: flex; background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 3px; flex: none; }
+.seg button { border: 0; background: none; border-radius: 9px; padding: 7px 12px; font-weight: 700; color: var(--muted); }
+.seg button.on { background: var(--blue); color: #fff; }
+.seg.full { width: 100%; }
+.seg.full button { flex: 1; }
+.btn.new { flex: none; }
+.pgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; }
+.pcard { background: #fff; border: 1px solid var(--line); border-radius: var(--r); padding: 8px; display: flex; flex-direction: column; gap: 2px; }
+.thumb { position: relative; aspect-ratio: 1; background: #f1f4f9; border-radius: 10px; overflow: hidden; display: flex; align-items: center; justify-content: center; font-size: 36px; margin-bottom: 4px; }
+.thumb img { width: 100%; height: 100%; object-fit: contain; }
+.thumb .badge { position: absolute; top: 6px; left: 6px; }
+.thumb.sm { width: 56px; flex: none; font-size: 24px; margin: 0; }
+.pname { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.prow { display: flex; gap: 12px; align-items: center; padding: 8px 12px; }
+.badge { font-size: 12px; font-weight: 700; padding: 2px 8px; border-radius: 999px; }
+.s-todo { background: #fff5e0; color: #b45309; }
+.s-doing { background: #eaf2ff; color: var(--blue-d); }
+.s-done { background: var(--green-bg); color: var(--green-t); }
+.badge.dim { background: #f1f4f9; color: #b7bfcc; }
+.status-row { display: flex; gap: 8px; margin: 12px 0 4px; }
+.status-row .badge { font-size: 14px; padding: 4px 14px; }
+.done-note { display: flex; align-items: center; justify-content: center; color: var(--green-t); font-weight: 700; }
+
+.img-box { background: #fff; border: 1px dashed #cbd3df; border-radius: var(--r); overflow: hidden; display: flex; justify-content: center; max-height: 320px; }
+.img-box img { max-width: 100%; max-height: 320px; object-fit: contain; }
+.upload { border: 0; background: none; padding: 40px 0; width: 100%; color: var(--muted); }
+.upload b { font-size: 36px; color: var(--blue); display: block; }
+
+/* 扫描 */
+.scanner { margin-top: 10px; }
+.canvas-wrap { margin-top: 10px; width: 100%; }
+.scan-canvas { touch-action: none; display: block; border-radius: 8px; background: #fff; }
+.rc-row { display: flex; gap: 16px; }
+.rc-row label { display: flex; align-items: center; gap: 8px; margin: 6px 0; }
+details { margin: 8px 0; }
+summary { color: var(--blue-d); font-weight: 600; font-size: 14px; }
+.nudge { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 8px; }
+.nudge-item { display: flex; align-items: center; gap: 4px; flex-wrap: wrap; }
+.nudge-item small { width: 100%; color: var(--muted); }
+.preview-wrap { overflow: auto; max-height: 60vh; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+.preview-canvas { display: block; }
+.count-chip { display: inline-flex; align-items: center; gap: 2px; border: 1px solid var(--line); background: #fff; border-radius: 12px; padding: 3px 8px 3px 3px; font-weight: 700; }
+.count-chip .swatch { min-width: 44px; height: 26px; font-size: 12px; border-radius: 8px; }
+.counts-editor .edit-row { overflow: visible; }
+progress { width: 100%; }
+
+/* 设置 / 记录 */
+.set { padding: 14px; margin-bottom: 10px; }
+.set p { margin: 4px 0 8px; font-size: 13px; }
+.set.link { display: flex; justify-content: space-between; align-items: center; }
+.log { padding: 12px; margin-bottom: 8px; display: flex; flex-direction: column; gap: 4px; }
+.log-head { display: flex; align-items: center; gap: 8px; }
+.log-items { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 4px; }
+
+/* 修改库存行在窄屏上不横向滚动 */
+.edit-list .edit-row { overflow: visible; gap: 5px; }
+.edit-list .edit-row .swatch { min-width: 50px; padding: 0 4px; }
+.edit-list .edit-row .cur { min-width: 34px; font-size: 13px; }
+.edit-list .input.num { width: 64px; padding: 8px; }
+.edit-list .btn.sm { padding: 6px 7px; }
+@media (max-width: 440px) { .edit-list .edit-row .only-wide { display: none; } }
+
+</style>
+</head>
+<body>
+  <main id="page"></main>
+  <nav id="nav">
+    <a href="#/stock" data-tab="stock"><span>📦</span>库存</a>
+    <a href="#/projects" data-tab="projects"><span>🧩</span>项目</a>
+    <a href="#/settings" data-tab="settings"><span>👤</span>我的</a>
+  </nav>
+  <script type="module">
+// ===== palette-mard.js =====
+// MARD 标准 221 色（A–H、M 系列）。颜色数据来源: pixel-beads.com MARD 色卡（经 github.com/seven332/my-beads 整理）
+// 屏幕显示颜色仅供参考，与实物可能略有差异。
+const MARD = [
+  ["A01", "#F9F0CD"],
+  ["A02", "#FBFBD4"],
+  ["A03", "#FAFC9F"],
+  ["A04", "#FFE953"],
+  ["A05", "#F4D738"],
+  ["A06", "#FDAD49"],
+  ["A07", "#FF7C2F"],
+  ["A08", "#EACA49"],
+  ["A09", "#FF995A"],
+  ["A10", "#FF9D55"],
+  ["A11", "#FFDD99"],
+  ["A12", "#FCB58F"],
+  ["A13", "#FFBB59"],
+  ["A14", "#FF6D40"],
+  ["A15", "#FDFF44"],
+  ["A16", "#FEF9AE"],
+  ["A17", "#FFE36E"],
+  ["A18", "#FECF98"],
+  ["A19", "#FD7B72"],
+  ["A20", "#EFCD67"],
+  ["A21", "#FFE395"],
+  ["A22", "#FFF3A4"],
+  ["A23", "#F3D5BF"],
+  ["A24", "#FBF8C9"],
+  ["A25", "#FFD67D"],
+  ["A26", "#FFBB27"],
+  ["B01", "#E6EE32"],
+  ["B02", "#5BE419"],
+  ["B03", "#7CEE9D"],
+  ["B04", "#1EF942"],
+  ["B05", "#00BD35"],
+  ["B06", "#5AE8BA"],
+  ["B07", "#03AC88"],
+  ["B08", "#029D26"],
+  ["B09", "#26523A"],
+  ["B10", "#95D3C2"],
+  ["B11", "#5D722A"],
+  ["B12", "#156F40"],
+  ["B13", "#D9F794"],
+  ["B14", "#ADE945"],
+  ["B15", "#2E5132"],
+  ["B16", "#C6ED9C"],
+  ["B17", "#9BB13A"],
+  ["B18", "#E6EE49"],
+  ["B19", "#25B88C"],
+  ["B20", "#C2F0CC"],
+  ["B21", "#146A6B"],
+  ["B22", "#0B3C43"],
+  ["B23", "#303921"],
+  ["B24", "#EEFCA5"],
+  ["B25", "#4E846D"],
+  ["B26", "#8C7A36"],
+  ["B27", "#D1DCC1"],
+  ["B28", "#9EE5B9"],
+  ["B29", "#C5E254"],
+  ["B30", "#ECFBD0"],
+  ["B31", "#C4E6B5"],
+  ["B32", "#9BAB5A"],
+  ["C01", "#E8FFE7"],
+  ["C02", "#BCF9F6"],
+  ["C03", "#A0E2FB"],
+  ["C04", "#42CCFF"],
+  ["C05", "#01ACEB"],
+  ["C06", "#50A9F0"],
+  ["C07", "#0188D3"],
+  ["C08", "#1054C0"],
+  ["C09", "#314BCA"],
+  ["C10", "#3EBCE2"],
+  ["C11", "#03B9B9"],
+  ["C12", "#1C334D"],
+  ["C13", "#CDE8FF"],
+  ["C14", "#D5FDFF"],
+  ["C15", "#23C4C6"],
+  ["C16", "#1757A8"],
+  ["C17", "#50D3EC"],
+  ["C18", "#1C3344"],
+  ["C19", "#1787A2"],
+  ["C20", "#0082BE"],
+  ["C21", "#BEDDFF"],
+  ["C22", "#67B4BE"],
+  ["C23", "#C2DCEB"],
+  ["C24", "#7DC4FF"],
+  ["C25", "#A9E5E5"],
+  ["C26", "#2F99B3"],
+  ["C27", "#EBF5FC"],
+  ["C28", "#BBCFED"],
+  ["C29", "#4B5BA3"],
+  ["D01", "#AEB4F2"],
+  ["D02", "#858EDD"],
+  ["D03", "#3054AF"],
+  ["D04", "#182A84"],
+  ["D05", "#B843C5"],
+  ["D06", "#AC7BDE"],
+  ["D07", "#6E399A"],
+  ["D08", "#E2D3FF"],
+  ["D09", "#D5B9F8"],
+  ["D10", "#361B50"],
+  ["D11", "#B9BAE1"],
+  ["D12", "#DE9AD4"],
+  ["D13", "#B90295"],
+  ["D14", "#8B279B"],
+  ["D15", "#2F1F90"],
+  ["D16", "#E2E1EE"],
+  ["D17", "#C4D4F6"],
+  ["D18", "#A45EC7"],
+  ["D19", "#D8C3D7"],
+  ["D20", "#9C32B2"],
+  ["D21", "#9A009B"],
+  ["D22", "#333995"],
+  ["D23", "#EADAFC"],
+  ["D24", "#7786E5"],
+  ["D25", "#484FC7"],
+  ["D26", "#E9C3F6"],
+  ["E01", "#FDD3CC"],
+  ["E02", "#FECDDF"],
+  ["E03", "#FF97C3"],
+  ["E04", "#E8649E"],
+  ["E05", "#F551A2"],
+  ["E06", "#FF346B"],
+  ["E07", "#C63578"],
+  ["E08", "#FFDBE9"],
+  ["E09", "#E970CC"],
+  ["E10", "#D33893"],
+  ["E11", "#FCDDD2"],
+  ["E12", "#FFA1C5"],
+  ["E13", "#B6006D"],
+  ["E14", "#FFD1BA"],
+  ["E15", "#F2CFD0"],
+  ["E16", "#FFECDE"],
+  ["E17", "#FFE2EA"],
+  ["E18", "#FFC9D6"],
+  ["E19", "#FFD2E7"],
+  ["E20", "#D8C7D1"],
+  ["E21", "#BD9DA1"],
+  ["E22", "#CC78A7"],
+  ["E23", "#937A8D"],
+  ["E24", "#F6E4F9"],
+  ["F01", "#FD957B"],
+  ["F02", "#FC3D45"],
+  ["F03", "#F74941"],
+  ["F04", "#FC283C"],
+  ["F05", "#D80127"],
+  ["F06", "#B0443D"],
+  ["F07", "#971937"],
+  ["F08", "#BC0127"],
+  ["F09", "#E2677A"],
+  ["F10", "#A74D22"],
+  ["F11", "#6F201F"],
+  ["F12", "#FD4D6A"],
+  ["F13", "#DD422F"],
+  ["F14", "#FFA9AD"],
+  ["F15", "#C80020"],
+  ["F16", "#FFD9C8"],
+  ["F17", "#F79B71"],
+  ["F18", "#D37C46"],
+  ["F19", "#C1444A"],
+  ["F20", "#CD9391"],
+  ["F21", "#F4B1B4"],
+  ["F22", "#FFD0CB"],
+  ["F23", "#F57E66"],
+  ["F24", "#FCC1C4"],
+  ["F25", "#E54B4F"],
+  ["G01", "#FFE2CE"],
+  ["G02", "#FFCAAA"],
+  ["G03", "#F4C3A5"],
+  ["G04", "#E1B383"],
+  ["G05", "#ED9435"],
+  ["G06", "#F59734"],
+  ["G07", "#9D5B3E"],
+  ["G08", "#592A21"],
+  ["G09", "#E6B483"],
+  ["G10", "#C88135"],
+  ["G11", "#E0C593"],
+  ["G12", "#EBBB83"],
+  ["G13", "#B7714A"],
+  ["G14", "#8D614C"],
+  ["G15", "#FCF9E0"],
+  ["G16", "#F2D9BA"],
+  ["G17", "#56403C"],
+  ["G18", "#FFE4CC"],
+  ["G19", "#E1943A"],
+  ["G20", "#A94023"],
+  ["G21", "#CB8E77"],
+  ["H01", "#E2E2E2"],
+  ["H02", "#FFFFFF"],
+  ["H03", "#B3B3B3"],
+  ["H04", "#868686"],
+  ["H05", "#474747"],
+  ["H06", "#2C2C2C"],
+  ["H07", "#000000"],
+  ["H08", "#E7D6DB"],
+  ["H09", "#E4E7E3"],
+  ["H10", "#EEE9EA"],
+  ["H11", "#CECDD5"],
+  ["H12", "#FFF5ED"],
+  ["H13", "#F3E1C9"],
+  ["H14", "#CFD7D3"],
+  ["H15", "#98A6A8"],
+  ["H16", "#3B2F23"],
+  ["H17", "#F1EDED"],
+  ["H18", "#FFFDF0"],
+  ["H19", "#F6EFE2"],
+  ["H20", "#949FA3"],
+  ["H21", "#F7F3E4"],
+  ["H22", "#CACAD5"],
+  ["H23", "#9A9D94"],
+  ["M01", "#BCC6B8"],
+  ["M02", "#8AA385"],
+  ["M03", "#697D80"],
+  ["M04", "#DACEBE"],
+  ["M05", "#D0CCAA"],
+  ["M06", "#B0A782"],
+  ["M07", "#B4A497"],
+  ["M08", "#B38281"],
+  ["M09", "#A58767"],
+  ["M10", "#C5B1BC"],
+  ["M11", "#9F7494"],
+  ["M12", "#644749"],
+  ["M13", "#D19066"],
+  ["M14", "#C77361"],
+  ["M15", "#757D7B"],
+].map(([code, hex]) => ({ code, hex, brand: "MARD" }));
+
+// ===== color.js =====
+// 颜色工具：hex/RGB/Lab 转换与 CIEDE2000 最近色匹配
+
+function hexToRgb(hex) {
+  const h = hex.replace('#', '');
+  const n = parseInt(h.length === 3 ? h.split('').map(c => c + c).join('') : h, 16);
+  return [(n >> 16) & 255, (n >> 8) & 255, n & 255];
+}
+
+function rgbToHex([r, g, b]) {
+  return '#' + [r, g, b].map(v => Math.round(v).toString(16).padStart(2, '0')).join('').toUpperCase();
+}
+
+function rgbToLab([r, g, b]) {
+  const lin = v => { v /= 255; return v > 0.04045 ? ((v + 0.055) / 1.055) ** 2.4 : v / 12.92; };
+  const R = lin(r), G = lin(g), B = lin(b);
+  const X = (R * 0.4124 + G * 0.3576 + B * 0.1805) / 0.95047;
+  const Y = (R * 0.2126 + G * 0.7152 + B * 0.0722);
+  const Z = (R * 0.0193 + G * 0.1192 + B * 0.9505) / 1.08883;
+  const f = t => t > 0.008856 ? Math.cbrt(t) : 7.787 * t + 16 / 116;
+  const fx = f(X), fy = f(Y), fz = f(Z);
+  return [116 * fy - 16, 500 * (fx - fy), 200 * (fy - fz)];
+}
+
+function deltaE2000([L1, a1, b1], [L2, a2, b2]) {
+  const rad = Math.PI / 180;
+  const C1 = Math.hypot(a1, b1), C2 = Math.hypot(a2, b2);
+  const Cm = (C1 + C2) / 2;
+  const G = 0.5 * (1 - Math.sqrt(Cm ** 7 / (Cm ** 7 + 25 ** 7)));
+  const a1p = a1 * (1 + G), a2p = a2 * (1 + G);
+  const C1p = Math.hypot(a1p, b1), C2p = Math.hypot(a2p, b2);
+  const h = (a, b) => { if (a === 0 && b === 0) return 0; const v = Math.atan2(b, a) / rad; return v < 0 ? v + 360 : v; };
+  const h1p = h(a1p, b1), h2p = h(a2p, b2);
+  const dLp = L2 - L1, dCp = C2p - C1p;
+  let dhp = 0;
+  if (C1p * C2p !== 0) {
+    dhp = h2p - h1p;
+    if (dhp > 180) dhp -= 360; else if (dhp < -180) dhp += 360;
+  }
+  const dHp = 2 * Math.sqrt(C1p * C2p) * Math.sin(dhp * rad / 2);
+  const Lpm = (L1 + L2) / 2, Cpm = (C1p + C2p) / 2;
+  let hpm = h1p + h2p;
+  if (C1p * C2p !== 0) {
+    if (Math.abs(h1p - h2p) > 180) hpm += h1p + h2p < 360 ? 360 : -360;
+    hpm /= 2;
+  }
+  const T = 1 - 0.17 * Math.cos((hpm - 30) * rad) + 0.24 * Math.cos(2 * hpm * rad)
+    + 0.32 * Math.cos((3 * hpm + 6) * rad) - 0.2 * Math.cos((4 * hpm - 63) * rad);
+  const dTheta = 30 * Math.exp(-(((hpm - 275) / 25) ** 2));
+  const Rc = 2 * Math.sqrt(Cpm ** 7 / (Cpm ** 7 + 25 ** 7));
+  const Sl = 1 + 0.015 * (Lpm - 50) ** 2 / Math.sqrt(20 + (Lpm - 50) ** 2);
+  const Sc = 1 + 0.045 * Cpm, Sh = 1 + 0.015 * Cpm * T;
+  const Rt = -Math.sin(2 * dTheta * rad) * Rc;
+  return Math.sqrt((dLp / Sl) ** 2 + (dCp / Sc) ** 2 + (dHp / Sh) ** 2 + Rt * (dCp / Sc) * (dHp / Sh));
+}
+
+// 预计算色表 Lab，返回 rgb => {code, dist}
+function makeMatcher(colors) {
+  const list = colors.map(c => ({ code: c.code, lab: rgbToLab(hexToRgb(c.hex)) }));
+  const cache = new Map();
+  return rgb => {
+    const key = (rgb[0] >> 2) << 12 | (rgb[1] >> 2) << 6 | (rgb[2] >> 2);
+    if (cache.has(key)) return cache.get(key);
+    const lab = rgbToLab(rgb);
+    let best = null, bd = Infinity;
+    for (const c of list) {
+      const d = deltaE2000(lab, c.lab);
+      if (d < bd) { bd = d; best = c.code; }
+    }
+    const r = { code: best, dist: bd };
+    cache.set(key, r);
+    return r;
+  };
+}
+
+// 色块上文字用黑还是白
+function textOn(hex) {
+  const [r, g, b] = hexToRgb(hex);
+  return (0.299 * r + 0.587 * g + 0.114 * b) > 150 ? '#1f2937' : '#ffffff';
+}
+
+// ===== db.js =====
+// 数据层：IndexedDB 持久化 + 库存/项目业务逻辑
+
+const DB_NAME = 'pindou-db';
+let dbp = null;
+
+function openDB() {
+  if (dbp) return dbp;
+  dbp = new Promise((resolve, reject) => {
+    const req = indexedDB.open(DB_NAME, 1);
+    req.onupgradeneeded = () => {
+      const db = req.result;
+      db.createObjectStore('kv');
+      db.createObjectStore('projects', { keyPath: 'id' });
+    };
+    req.onsuccess = () => resolve(req.result);
+    req.onerror = () => reject(req.error);
+  });
+  return dbp;
+}
+
+function tx(store, mode, fn) {
+  return openDB().then(db => new Promise((resolve, reject) => {
+    const t = db.transaction(store, mode);
+    const s = t.objectStore(store);
+    const r = fn(s);
+    t.oncomplete = () => resolve(r && 'result' in r ? r.result : undefined);
+    t.onerror = () => reject(t.error);
+  }));
+}
+
+const KV_KEYS = ['settings', 'custom', 'stock', 'consumed', 'logs'];
+
+const state = {
+  settings: { lowThreshold: 300 },
+  custom: [],      // [{code, name, hex}]
+  stock: {},       // code -> 数量
+  consumed: {},    // code -> 累计消耗
+  logs: [],        // [{id, time, type, note, items:[{code, delta, consume}], projectId}]
+  projects: [],    // [{id, name, status, created, updated, image(Blob), thumb, counts:{code:n}, doneLogId}]
+};
+
+async function loadAll() {
+  for (const k of KV_KEYS) {
+    const v = await tx('kv', 'readonly', s => s.get(k));
+    if (v !== undefined) state[k] = v;
+  }
+  state.settings = { lowThreshold: 300, ...state.settings };
+  state.projects = (await tx('projects', 'readonly', s => s.getAll())) || [];
+  state.projects.sort((a, b) => b.created - a.created);
+}
+
+function saveKV(...keys) {
+  return Promise.all(keys.map(k => tx('kv', 'readwrite', s => s.put(state[k], k))));
+}
+
+function saveProject(p) {
+  p.updated = Date.now();
+  if (!state.projects.includes(p)) state.projects.unshift(p);
+  return tx('projects', 'readwrite', s => s.put(p));
+}
+
+async function deleteProject(id) {
+  state.projects = state.projects.filter(p => p.id !== id);
+  await tx('projects', 'readwrite', s => s.delete(id));
+}
+
+const uid = () => Date.now().toString(36) + Math.random().toString(36).slice(2, 7);
+
+// ---------- 色表 ----------
+function allColors() {
+  return [...MARD, ...state.custom.map(c => ({ ...c, brand: 'CUSTOM' }))];
+}
+function colorMap() {
+  const m = new Map();
+  for (const c of allColors()) m.set(c.code, c);
+  return m;
+}
+// 规范化色号：a1 -> A01；自创色号原样大写
+function normCode(raw) {
+  const s = String(raw).trim().toUpperCase().replace(/\s+/g, '');
+  const m = s.match(/^([A-HM])0*(\d{1,2})$/);
+  if (m) return m[1] + m[2].padStart(2, '0');
+  return s;
+}
+function isValidCode(code) {
+  return colorMap().has(code);
+}
+
+// ---------- 库存变更 ----------
+// items: [{code, delta, consume}]  consume=true 表示计入「出库/消耗」
+async function applyChange({ type, note = '', items, projectId = null }) {
+  items = items.filter(i => i.delta !== 0);
+  if (!items.length) return null;
+  for (const i of items) {
+    state.stock[i.code] = (state.stock[i.code] || 0) + i.delta;
+    if (i.consume && i.delta < 0) state.consumed[i.code] = (state.consumed[i.code] || 0) - i.delta;
+  }
+  const log = { id: uid(), time: Date.now(), type, note, items, projectId };
+  state.logs.unshift(log);
+  await saveKV('stock', 'consumed', 'logs');
+  return log;
+}
+
+async function undoLog(id) {
+  const log = state.logs.find(l => l.id === id);
+  if (!log) return;
+  for (const i of log.items) {
+    state.stock[i.code] = (state.stock[i.code] || 0) - i.delta;
+    if (i.consume && i.delta < 0) state.consumed[i.code] = Math.max(0, (state.consumed[i.code] || 0) + i.delta);
+  }
+  state.logs = state.logs.filter(l => l.id !== id);
+  const p = log.projectId && state.projects.find(p => p.id === log.projectId);
+  if (p && p.doneLogId === id) {
+    p.status = 'doing';
+    p.doneLogId = null;
+    await saveProject(p);
+  }
+  await saveKV('stock', 'consumed', 'logs');
+}
+
+// 标记项目拼好 → 扣库存
+async function finishProject(p) {
+  const items = Object.entries(p.counts).map(([code, n]) => ({ code, delta: -n, consume: true }));
+  const log = await applyChange({ type: 'project', note: `拼好：${p.name}`, items, projectId: p.id });
+  p.status = 'done';
+  p.doneLogId = log ? log.id : null;
+  p.doneAt = Date.now();
+  await saveProject(p);
+}
+
+function shortage(counts) {
+  const out = [];
+  for (const [code, n] of Object.entries(counts)) {
+    const have = state.stock[code] || 0;
+    if (have < n) out.push({ code, need: n, have, lack: n - have });
+  }
+  return out;
+}
+
+// ---------- 备份 ----------
+const blobToDataURL = b => new Promise(r => { const f = new FileReader(); f.onload = () => r(f.result); f.readAsDataURL(b); });
+const dataURLToBlob = async u => (await fetch(u)).blob();
+
+async function exportBackup() {
+  const projects = [];
+  for (const p of state.projects) {
+    projects.push({ ...p, image: p.image instanceof Blob ? await blobToDataURL(p.image) : p.image });
+  }
+  const data = { app: 'pindou', version: 1, exported: Date.now() };
+  for (const k of KV_KEYS) data[k] = state[k];
+  data.projects = projects;
+  return new Blob([JSON.stringify(data)], { type: 'application/json' });
+}
+
+async function importBackup(text) {
+  const data = JSON.parse(text);
+  if (data.app !== 'pindou') throw new Error('不是本 App 的备份文件');
+  await clearAll();
+  for (const k of KV_KEYS) if (data[k] !== undefined) state[k] = data[k];
+  await saveKV(...KV_KEYS);
+  for (const p of data.projects || []) {
+    if (typeof p.image === 'string' && p.image.startsWith('data:')) p.image = await dataURLToBlob(p.image);
+    await saveProject(p);
+  }
+  state.projects.sort((a, b) => b.created - a.created);
+}
+
+async function clearAll() {
+  await tx('kv', 'readwrite', s => s.clear());
+  await tx('projects', 'readwrite', s => s.clear());
+  Object.assign(state, { settings: { lowThreshold: 300 }, custom: [], stock: {}, consumed: {}, logs: [], projects: [] });
+}
+
+// ===== ui.js =====
+// 通用 UI 小工具
+
+// h('div.cls', {onclick}, children...)
+function h(sel, attrs, ...kids) {
+  if (attrs == null || typeof attrs !== 'object' || attrs instanceof Node || Array.isArray(attrs)) {
+    if (attrs != null) kids.unshift(attrs);
+    attrs = {};
+  }
+  const [tag, ...cls] = sel.split('.');
+  const el = document.createElement(tag || 'div');
+  if (cls.length) el.className = cls.join(' ');
+  for (const [k, v] of Object.entries(attrs)) {
+    if (v == null || v === false) continue;
+    if (k.startsWith('on')) el.addEventListener(k.slice(2), v);
+    else if (k === 'style' && typeof v === 'object') Object.assign(el.style, v);
+    else if (k === 'html') el.innerHTML = v;
+    else if (k in el && k !== 'list' && k !== 'type') el[k] = v;
+    else el.setAttribute(k, v === true ? '' : v);
+  }
+  const add = k => {
+    if (k == null || k === false) return;
+    if (Array.isArray(k)) k.forEach(add);
+    else el.append(k instanceof Node ? k : document.createTextNode(String(k)));
+  };
+  kids.forEach(add);
+  return el;
+}
+
+const fmt = n => (n || 0).toLocaleString('zh-CN');
+
+function swatch(code, cls = '') {
+  const c = colorMap().get(code);
+  const hex = c ? c.hex : '#e5e7eb';
+  return h('span.swatch' + (cls ? '.' + cls : ''), { style: { background: hex, color: textOn(hex) }, title: c?.name || code }, code);
+}
+
+let toastTimer;
+function toast(msg) {
+  let t = document.getElementById('toast');
+  if (!t) { t = h('div.toast', { id: 'toast' }); document.body.append(t); }
+  t.textContent = msg;
+  t.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => t.classList.remove('show'), 2200);
+}
+
+// 底部弹出层；返回 close()
+function sheet(title, body, { onClose } = {}) {
+  const close = () => { wrap.remove(); onClose && onClose(); };
+  const wrap = h('div.sheet-wrap', { onclick: e => { if (e.target === wrap) close(); } },
+    h('div.sheet',
+      h('div.sheet-head', h('b', title), h('button.icon-btn', { onclick: close, 'aria-label': '关闭' }, '✕')),
+      h('div.sheet-body', body)));
+  document.body.append(wrap);
+  return close;
+}
+
+function confirmBox(title, message, okText = '确定', danger = false) {
+  return new Promise(resolve => {
+    let done = false;
+    const finish = v => { if (!done) { done = true; close(); resolve(v); } };
+    const close = sheet(title, [
+      typeof message === 'string' ? h('p.muted', message) : message,
+      h('div.row-btns',
+        h('button.btn', { onclick: () => finish(false) }, '取消'),
+        h('button.btn' + (danger ? '.danger' : '.primary'), { onclick: () => finish(true) }, okText)),
+    ], { onClose: () => { if (!done) { done = true; resolve(false); } } });
+  });
+}
+
+// 选色号：返回 Promise<code|null>，extra: 额外按钮 [{label, value}]
+function pickColor({ title = '选择色号', extra = [] } = {}) {
+  return new Promise(resolve => {
+    let done = false;
+    const grid = h('div.pick-grid');
+    const search = h('input.input', { placeholder: '搜索色号，如 A01 / 自创', autocomplete: 'off' });
+    const letters = ['全部', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'M', '自创'];
+    let letter = '全部';
+    const chips = h('div.chips');
+    const render = () => {
+      const q = search.value.trim().toUpperCase();
+      grid.innerHTML = '';
+      chips.innerHTML = '';
+      letters.forEach(l => chips.append(h('button.chip' + (l === letter ? '.on' : ''), { onclick: () => { letter = l; render(); } }, l)));
+      for (const c of allColors()) {
+        if (letter === '自创' && c.brand !== 'CUSTOM') continue;
+        if (letter !== '全部' && letter !== '自创' && (c.brand !== 'MARD' || c.code[0] !== letter)) continue;
+        if (q && !c.code.includes(q) && !(c.name || '').toUpperCase().includes(q)) continue;
+        grid.append(h('button.pick', { onclick: () => finish(c.code) }, swatch(c.code)));
+      }
+    };
+    const finish = v => { if (!done) { done = true; close(); resolve(v); } };
+    search.addEventListener('input', render);
+    const close = sheet(title, [
+      search, chips,
+      extra.length ? h('div.row-btns', extra.map(e => h('button.btn', { onclick: () => finish(e.value) }, e.label))) : null,
+      grid,
+    ], { onClose: () => { if (!done) { done = true; resolve(null); } } });
+    render();
+  });
+}
+
+function downloadBlob(blob, name) {
+  const a = h('a', { href: URL.createObjectURL(blob), download: name });
+  document.body.append(a);
+  a.click();
+  setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 1000);
+}
+
+async function copyText(text) {
+  try { await navigator.clipboard.writeText(text); toast('已复制'); }
+  catch { sheet('复制下面的文字', h('textarea.input', { rows: 10, value: text })); }
+}
+
+// ===== scanner.js =====
+// 图纸扫描：A. 格子颜色识别  B. 用量表 OCR
+
+// ---------- 图片工具 ----------
+async function loadImage(blob) {
+  const img = new Image();
+  await new Promise((resolve, reject) => {
+    img.onload = resolve;
+    img.onerror = () => reject(new Error('图片无法打开'));
+    img.src = URL.createObjectURL(blob);
+  });
+  return img;
+}
+
+function imageData(img, maxSide = 3000) {
+  const k = Math.min(1, maxSide / Math.max(img.naturalWidth, img.naturalHeight));
+  const w = Math.round(img.naturalWidth * k), hh = Math.round(img.naturalHeight * k);
+  const c = document.createElement('canvas');
+  c.width = w; c.height = hh;
+  const ctx = c.getContext('2d', { willReadFrequently: true });
+  ctx.drawImage(img, 0, 0, w, hh);
+  return ctx.getImageData(0, 0, w, hh);
+}
+
+// ---------- 网格自动检测 ----------
+// 统计每一列（行）上「格子分界」像素的数量，再找出等间距的分界线
+function lineProfile(id, vertical) {
+  const { width: W, height: H, data } = id;
+  const g = new Float32Array(W * H);
+  for (let i = 0, j = 0; i < g.length; i++, j += 4) g[i] = 0.299 * data[j] + 0.587 * data[j + 1] + 0.114 * data[j + 2];
+  const prof = new Float32Array(vertical ? W : H);
+  const d = 2;
+  // 某像素算「分界」：是细线（比两侧都暗/亮），或两侧颜色明显不同（相邻格子颜色不同）
+  const hit = (i, a, b) => {
+    if (isLine(g[i], g[a], g[b])) return true;
+    const A = a * 4, B = b * 4;
+    return Math.max(Math.abs(data[A] - data[B]), Math.abs(data[A + 1] - data[B + 1]), Math.abs(data[A + 2] - data[B + 2])) > 28;
+  };
+  if (vertical) {
+    for (let y = 0; y < H; y++) for (let x = d; x < W - d; x++) { const i = y * W + x; if (hit(i, i - d, i + d)) prof[x]++; }
+  } else {
+    for (let y = d; y < H - d; y++) for (let x = 0; x < W; x++) { const i = y * W + x; if (hit(i, i - d * W, i + d * W)) prof[y]++; }
+  }
+  return prof;
+}
+
+// 网格线像素：比两侧都暗或都亮（深色格子之间的浅色线也能识别）
+const isLine = (v, a, b) => (v + 8 < a && v + 8 < b) || (v > a + 8 && v > b + 8);
+
+function findGridLines(prof) {
+  const L = prof.length;
+  // 平滑一点，容忍 1–2 像素误差
+  const P = new Float32Array(L);
+  for (let x = 0; x < L; x++) P[x] = Math.max(prof[x], prof[x - 1] || 0, prof[x + 1] || 0);
+  let mean = 0;
+  for (const v of P) mean += v;
+  mean /= L;
+  if (!mean) return null;
+  // 1) 自相关找大致周期（取接近最高分的最小周期，避免取到倍数）
+  const maxP = Math.floor(L / 3);
+  const score = new Float32Array(maxP + 1);
+  let top = 0;
+  for (let p = 5; p <= maxP; p++) {
+    let s = 0;
+    for (let x = 0; x + p < L; x++) s += (P[x] - mean) * (P[x + p] - mean);
+    score[p] = s / (L - p);
+    top = Math.max(top, score[p]);
+  }
+  if (top <= 0) return null;
+  let p0 = 0;
+  for (let p = 5; p <= maxP; p++) {
+    if (score[p] >= top * 0.75 && score[p] >= score[p - 1] && score[p] >= (score[p + 1] ?? -Infinity)) { p0 = p; break; }
+  }
+  if (!p0) return null;
+  // 2) 细调小数周期和相位：让等距梳子落在线上的总强度最大
+  const at = x => P[Math.round(x)] || 0;
+  let best = { v: -1 };
+  for (let p = p0 - 0.8; p <= p0 + 0.8; p += 0.05) {
+    for (let ph = 0; ph < p; ph += 0.5) {
+      let v = 0;
+      for (let x = ph; x < L; x += p) v += at(x);
+      if (v > best.v) best = { v, p, ph };
+    }
+  }
+  // 3) 网格范围：梳齿强度连续较高的最长一段
+  const teeth = [];
+  for (let x = best.ph; x < L; x += best.p) teeth.push({ x, v: at(x) });
+  const sorted = teeth.map(t => t.v).sort((a, b) => a - b);
+  const thr = sorted[Math.floor(sorted.length * 0.9)] * 0.35;
+  let run = null, cur = null;
+  teeth.forEach((t, i) => {
+    if (t.v >= thr) {
+      if (!cur) cur = { s: i, e: i };
+      else cur.e = i;
+      if (!run || cur.e - cur.s > run.e - run.s) run = { ...cur };
+    } else if (cur && !(teeth[i + 1] && teeth[i + 1].v >= thr && i - cur.e === 1 && t.v >= thr * 0.5)) cur = null;
+  });
+  if (!run || run.e - run.s < 2) return null;
+  return { start: teeth[run.s].x, end: teeth[run.e].x, count: run.e - run.s };
+}
+
+function detectGrid(img) {
+  const id = imageData(img, 1800);
+  const k = img.naturalWidth / id.width;
+  const vx = findGridLines(lineProfile(id, true));
+  const vy = findGridLines(lineProfile(id, false));
+  if (!vx || !vy) return null;
+  const x0 = vx.start * k, x1 = vx.end * k, y0 = vy.start * k, y1 = vy.end * k;
+  return { corners: [[x0, y0], [x1, y0], [x1, y1], [x0, y1]], cols: vx.count, rows: vy.count };
+}
+
+// ---------- 格子取色 ----------
+// 双线性插值：u,v ∈ [0,1] 映射到四角框内
+function bil(c, u, v) {
+  const [a, b, cc, d] = c; // 左上 右上 右下 左下
+  const x = (1 - u) * (1 - v) * a[0] + u * (1 - v) * b[0] + u * v * cc[0] + (1 - u) * v * d[0];
+  const y = (1 - u) * (1 - v) * a[1] + u * (1 - v) * b[1] + u * v * cc[1] + (1 - u) * v * d[1];
+  return [x, y];
+}
+
+function scanCells(img, { corners, rows, cols, ignoreBlank }) {
+  const id = imageData(img);
+  const k = id.width / img.naturalWidth;
+  const cs = corners.map(([x, y]) => [x * k, y * k]);
+  const { width: W, data } = id;
+  const match = makeMatcher(allColors());
+  const cells = [];
+  const N = 10; // 每格采样 N×N
+  for (let r = 0; r < rows; r++) {
+    const row = [];
+    for (let c = 0; c < cols; c++) {
+      const buckets = new Map();
+      const px = [];
+      for (let i = 0; i < N; i++) for (let j = 0; j < N; j++) {
+        const u = (c + 0.14 + 0.72 * (i + 0.5) / N) / cols;
+        // 色号文字一般在格子中间，偏重采样上下两条（避开文字）
+        const fj = (j + 0.5) / N;
+        const v = (r + (fj < 0.5 ? 0.12 + fj * 0.44 : 0.66 + (fj - 0.5) * 0.44)) / rows;
+        const [x, y] = bil(cs, u, v);
+        const o = (Math.round(y) * W + Math.round(x)) * 4;
+        const p = [data[o], data[o + 1], data[o + 2]];
+        px.push(p);
+        const key = (p[0] >> 4) << 8 | (p[1] >> 4) << 4 | (p[2] >> 4);
+        (buckets.get(key) || buckets.set(key, []).get(key)).push(p);
+      }
+      // 占比最多的颜色 = 底色（避开格内文字）
+      let dom = null;
+      for (const b of buckets.values()) if (!dom || b.length > dom.length) dom = b;
+      // 合并与主色接近的像素求平均
+      const m0 = avg(dom);
+      const near = px.filter(p => dist(p, m0) < 24);
+      const mean = avg(near);
+      if (ignoreBlank) {
+        // 格子中间有没有文字（和底色差别大的像素）
+        let text = 0;
+        for (let i = 0; i < N; i++) for (let j = 0; j < N; j++) {
+          const [x, y] = bil(cs, (c + 0.14 + 0.72 * (i + 0.5) / N) / cols, (r + 0.2 + 0.6 * (j + 0.5) / N) / rows);
+          const o = (Math.round(y) * W + Math.round(x)) * 4;
+          if (dist([data[o], data[o + 1], data[o + 2]], mean) > 70) text++;
+        }
+        if (text / (N * N) < 0.02) { row.push(null); continue; }
+      }
+      row.push(match(mean).code);
+    }
+    cells.push(row);
+  }
+  return cells;
+}
+const avg = ps => { const s = [0, 0, 0]; for (const p of ps) { s[0] += p[0]; s[1] += p[1]; s[2] += p[2]; } return s.map(v => v / ps.length); };
+const dist = (a, b) => Math.hypot(a[0] - b[0], a[1] - b[1], a[2] - b[2]);
+
+function countCells(cells) {
+  const counts = {};
+  for (const row of cells) for (const c of row) if (c) counts[c] = (counts[c] || 0) + 1;
+  return counts;
+}
+
+// ---------- OCR ----------
+let tessLoading = null;
+function loadTesseract() {
+  if (window.Tesseract) return Promise.resolve();
+  if (!tessLoading) tessLoading = new Promise((res, rej) => {
+    const s = document.createElement('script');
+    s.src = 'https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js';
+    s.onload = res;
+    s.onerror = () => { tessLoading = null; rej(new Error('OCR 组件加载失败，请检查网络（首次使用需要联网）')); };
+    document.head.append(s);
+  });
+  return tessLoading;
+}
+
+// rect: [x, y, w, h]（原图坐标），不传则识别整张图
+async function ocrLegend(blob, onProgress, rect) {
+  await loadTesseract();
+  const img = await loadImage(blob);
+  const [sx, sy, sw, sh] = rect || [0, 0, img.naturalWidth, img.naturalHeight];
+  // 放大小图，提高识别率
+  const scale = Math.max(1, Math.min(3, 2000 / sw));
+  const c = document.createElement('canvas');
+  c.width = sw * scale; c.height = sh * scale;
+  const ctx = c.getContext('2d');
+  ctx.imageSmoothingQuality = 'high';
+  ctx.fillStyle = '#fff';
+  ctx.fillRect(0, 0, c.width, c.height);
+  ctx.drawImage(img, sx, sy, sw, sh, 0, 0, c.width, c.height);
+  const { data } = await window.Tesseract.recognize(c, 'eng', {
+    logger: m => m.status === 'recognizing text' && onProgress && onProgress(m.progress),
+  });
+  return parseLegend(data.text);
+}
+
+function parseLegend(text) {
+  const custom = state.custom.map(c => c.code.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
+  const codeRe = `(${custom.length ? custom.join('|') + '|' : ''}[A-HM]\\s?\\d{1,2})`;
+  const re = new RegExp(codeRe + '[^0-9A-Z]{0,4}?(\\d{1,5})(?![0-9])', 'g');
+  // 统一大写；乘号/星号当作分隔符；修正色号里常见的误识别（O→0, S→5, I/L→1）
+  const t = text.toUpperCase().replace(/[×X＊*]/g, ' ')
+    .replace(/([A-HM])([0-9OSIL]{1,2})(?![A-Z])/g, (_, a, b) => a + b.replace(/O/g, '0').replace(/S/g, '5').replace(/[IL]/g, '1'));
+  const counts = {};
+  const map = colorMap();
+  let m;
+  while ((m = re.exec(t))) {
+    const code = normCode(m[1]);
+    const n = parseInt(m[2], 10);
+    if (!map.has(code) || !n) continue;
+    counts[code] = n; // 同一色号出现多次时取最后一次（用量表通常在图纸下方）
+  }
+  return counts;
+}
+
+// ---------- 框选区域 UI（OCR 用）----------
+// 在图上拖动画出矩形；返回 {el, rect()}
+function cropSelector(img) {
+  const W = img.naturalWidth, H = img.naturalHeight;
+  let r = [0, H * 0.7, W, H * 0.3]; // 默认：下方 30%（用量表常在底部）
+  const canvas = h('canvas.scan-canvas');
+  const ctx = canvas.getContext('2d');
+  let scale = 1, start = null;
+  const layout = () => {
+    const maxW = Math.min(canvas.parentElement ? canvas.parentElement.clientWidth : 360, 900);
+    scale = maxW / W;
+    const dpr = window.devicePixelRatio || 1;
+    canvas.style.width = maxW + 'px'; canvas.style.height = H * scale + 'px';
+    canvas.width = maxW * dpr; canvas.height = H * scale * dpr;
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    draw();
+  };
+  const draw = () => {
+    const w = W * scale, hh = H * scale;
+    ctx.drawImage(img, 0, 0, w, hh);
+    ctx.fillStyle = 'rgba(15,23,42,.45)';
+    const [x, y, rw, rh] = r.map(v => v * scale);
+    ctx.fillRect(0, 0, w, y); ctx.fillRect(0, y + rh, w, hh - y - rh);
+    ctx.fillRect(0, y, x, rh); ctx.fillRect(x + rw, y, w - x - rw, rh);
+    ctx.strokeStyle = '#2563eb'; ctx.lineWidth = 2; ctx.strokeRect(x, y, rw, rh);
+  };
+  const pos = e => { const b = canvas.getBoundingClientRect(); return [Math.max(0, Math.min(W, (e.clientX - b.left) / scale)), Math.max(0, Math.min(H, (e.clientY - b.top) / scale))]; };
+  canvas.addEventListener('pointerdown', e => { start = pos(e); canvas.setPointerCapture(e.pointerId); e.preventDefault(); });
+  canvas.addEventListener('pointermove', e => {
+    if (!start) return;
+    const [x, y] = pos(e);
+    r = [Math.min(x, start[0]), Math.min(y, start[1]), Math.abs(x - start[0]), Math.abs(y - start[1])];
+    draw();
+  });
+  const end = () => { if (start && (r[2] < 10 || r[3] < 10)) r = [0, 0, W, H]; start = null; draw(); };
+  canvas.addEventListener('pointerup', end);
+  canvas.addEventListener('pointercancel', end);
+  const el = h('div.canvas-wrap', canvas);
+  setTimeout(layout, 0);
+  return { el, rect: () => r.map(Math.round) };
+}
+
+// ---------- 网格编辑器 UI ----------
+// 返回 {el, getCounts()}；onResult(counts) 在点击「使用此结果」时触发
+function gridScanner(img, onResult) {
+  const W = img.naturalWidth, H = img.naturalHeight;
+  const g = { corners: [[W * 0.05, H * 0.05], [W * 0.95, H * 0.05], [W * 0.95, H * 0.95], [W * 0.05, H * 0.95]], rows: 20, cols: 20 };
+  let cells = null;
+
+  const canvas = h('canvas.scan-canvas');
+  const ctx = canvas.getContext('2d');
+  const rowsIn = h('input.input.num', { type: 'number', inputmode: 'numeric', value: g.rows, min: 1 });
+  const colsIn = h('input.input.num', { type: 'number', inputmode: 'numeric', value: g.cols, min: 1 });
+  const ignore = h('input', { type: 'checkbox', checked: true });
+  const status = h('p.hint', '拖动 4 个蓝色圆点对准网格最外圈的 4 个角，填好行数和列数。');
+  const result = h('div');
+
+  let scale = 1, drag = -1, loupe = null;
+  const layout = () => {
+    const maxW = Math.min(canvas.parentElement ? canvas.parentElement.clientWidth : 360, 900);
+    scale = maxW / W;
+    const dpr = window.devicePixelRatio || 1;
+    canvas.style.width = maxW + 'px';
+    canvas.style.height = H * scale + 'px';
+    canvas.width = maxW * dpr; canvas.height = H * scale * dpr;
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    draw();
+  };
+  const draw = () => {
+    ctx.clearRect(0, 0, W * scale, H * scale);
+    ctx.drawImage(img, 0, 0, W * scale, H * scale);
+    const cs = g.corners.map(([x, y]) => [x * scale, y * scale]);
+    ctx.lineWidth = 1;
+    ctx.strokeStyle = 'rgba(37,99,235,.55)';
+    ctx.beginPath();
+    for (let c = 0; c <= g.cols; c++) { const a = bil(cs, c / g.cols, 0), b = bil(cs, c / g.cols, 1); ctx.moveTo(...a); ctx.lineTo(...b); }
+    for (let r = 0; r <= g.rows; r++) { const a = bil(cs, 0, r / g.rows), b = bil(cs, 1, r / g.rows); ctx.moveTo(...a); ctx.lineTo(...b); }
+    ctx.stroke();
+    ctx.lineWidth = 2; ctx.strokeStyle = '#2563eb';
+    ctx.beginPath(); ctx.moveTo(...cs[0]); cs.slice(1).forEach(p => ctx.lineTo(...p)); ctx.closePath(); ctx.stroke();
+    for (const [x, y] of cs) {
+      ctx.fillStyle = 'rgba(37,99,235,.35)'; ctx.beginPath(); ctx.arc(x, y, 14, 0, 7); ctx.fill();
+      ctx.fillStyle = '#2563eb'; ctx.beginPath(); ctx.arc(x, y, 4, 0, 7); ctx.fill();
+    }
+    // 放大镜
+    if (loupe) {
+      const [ix, iy] = loupe, R = 60, z = 4;
+      const lx = ix * scale < W * scale / 2 ? W * scale - R - 8 : R + 8, ly = R + 8;
+      ctx.save();
+      ctx.beginPath(); ctx.arc(lx, ly, R, 0, 7); ctx.clip();
+      ctx.fillStyle = '#fff'; ctx.fillRect(lx - R, ly - R, 2 * R, 2 * R);
+      const sw = (2 * R) / (scale * z);
+      ctx.drawImage(img, ix - sw / 2, iy - sw / 2, sw, sw, lx - R, ly - R, 2 * R, 2 * R);
+      ctx.strokeStyle = 'red'; ctx.lineWidth = 1;
+      ctx.beginPath(); ctx.moveTo(lx - R, ly); ctx.lineTo(lx + R, ly); ctx.moveTo(lx, ly - R); ctx.lineTo(lx, ly + R); ctx.stroke();
+      ctx.restore();
+      ctx.strokeStyle = '#2563eb'; ctx.lineWidth = 2; ctx.beginPath(); ctx.arc(lx, ly, R, 0, 7); ctx.stroke();
+    }
+  };
+  const pos = e => { const r = canvas.getBoundingClientRect(); return [(e.clientX - r.left) / scale, (e.clientY - r.top) / scale]; };
+  canvas.addEventListener('pointerdown', e => {
+    const [x, y] = pos(e);
+    let bd = 40 / scale;
+    drag = -1;
+    g.corners.forEach(([cx, cy], i) => { const d = Math.hypot(cx - x, cy - y); if (d < bd) { bd = d; drag = i; } });
+    if (drag >= 0) { canvas.setPointerCapture(e.pointerId); loupe = g.corners[drag]; draw(); e.preventDefault(); }
+  });
+  canvas.addEventListener('pointermove', e => {
+    if (drag < 0) return;
+    const [x, y] = pos(e);
+    g.corners[drag] = [Math.max(0, Math.min(W, x)), Math.max(0, Math.min(H, y))];
+    loupe = g.corners[drag];
+    draw();
+  });
+  const end = () => { if (drag >= 0) { drag = -1; loupe = null; draw(); } };
+  canvas.addEventListener('pointerup', end);
+  canvas.addEventListener('pointercancel', end);
+
+  const nudge = () => h('div.nudge', ['左上', '右上', '右下', '左下'].map((label, i) => h('div.nudge-item', h('small', label),
+    ...[['←', -1, 0], ['→', 1, 0], ['↑', 0, -1], ['↓', 0, 1]].map(([t, dx, dy]) =>
+      h('button.btn.xs', { onclick: () => { g.corners[i][0] += dx * Math.max(1, W / 1000); g.corners[i][1] += dy * Math.max(1, H / 1000); draw(); } }, t)))));
+
+  const readRC = () => {
+    g.rows = Math.max(1, Math.min(300, parseInt(rowsIn.value, 10) || 1));
+    g.cols = Math.max(1, Math.min(300, parseInt(colsIn.value, 10) || 1));
+  };
+  rowsIn.addEventListener('input', () => { readRC(); draw(); });
+  colsIn.addEventListener('input', () => { readRC(); draw(); });
+
+  const auto = () => {
+    const d = detectGrid(img);
+    if (!d) { status.textContent = '没能自动识别网格，请手动拖动四角并填写行列数。'; return; }
+    Object.assign(g, d);
+    rowsIn.value = g.rows; colsIn.value = g.cols;
+    status.textContent = `自动识别：${g.cols} 列 × ${g.rows} 行。请核对四角和行列数（边框粗线或坐标数字可能导致偏差）。`;
+    draw();
+  };
+
+  const run = () => {
+    readRC();
+    status.textContent = '识别中…';
+    setTimeout(() => {
+      cells = scanCells(img, { ...g, ignoreBlank: ignore.checked });
+      renderResult();
+      status.textContent = '识别完成，请检查下面的预览。点预览中的格子可以单独修改。';
+    }, 30);
+  };
+
+  const renderResult = () => {
+    const counts = countCells(cells);
+    const total = Object.values(counts).reduce((a, b) => a + b, 0);
+    const map = colorMap();
+    const pv = h('canvas.preview-canvas');
+    const cell = Math.max(6, Math.min(28, Math.floor(((canvas.parentElement?.clientWidth || 360)) / g.cols)));
+    const dpr = window.devicePixelRatio || 1;
+    pv.width = g.cols * cell * dpr; pv.height = g.rows * cell * dpr;
+    pv.style.width = g.cols * cell + 'px'; pv.style.height = g.rows * cell + 'px';
+    const pc = pv.getContext('2d');
+    pc.scale(dpr, dpr);
+    const paint = () => {
+      pc.clearRect(0, 0, g.cols * cell, g.rows * cell);
+      pc.font = `${Math.floor(cell * 0.36)}px sans-serif`;
+      pc.textAlign = 'center'; pc.textBaseline = 'middle';
+      cells.forEach((row, r) => row.forEach((code, c) => {
+        const hex = code ? map.get(code)?.hex || '#ccc' : '#ffffff';
+        pc.fillStyle = hex; pc.fillRect(c * cell, r * cell, cell, cell);
+        pc.strokeStyle = '#d1d5db'; pc.strokeRect(c * cell + 0.5, r * cell + 0.5, cell - 1, cell - 1);
+        if (code && cell >= 18) {
+          const [R, G, B] = [1, 3, 5].map(i => parseInt(hex.substr(i, 2), 16));
+          pc.fillStyle = 0.299 * R + 0.587 * G + 0.114 * B > 150 ? '#111' : '#fff';
+          pc.fillText(code, c * cell + cell / 2, r * cell + cell / 2);
+        }
+      }));
+    };
+    paint();
+    pv.addEventListener('click', async e => {
+      const rc = pv.getBoundingClientRect();
+      const c = Math.floor((e.clientX - rc.left) / cell), r = Math.floor((e.clientY - rc.top) / cell);
+      if (!cells[r] || c < 0 || c >= g.cols) return;
+      const code = await pickColor({ title: `第 ${r + 1} 行 第 ${c + 1} 列（当前 ${cells[r][c] || '空'}）`, extra: [{ label: '设为空格', value: '__EMPTY__' }] });
+      if (!code) return;
+      cells[r][c] = code === '__EMPTY__' ? null : code;
+      renderResult();
+    });
+    result.replaceChildren(
+      h('h3', `识别结果：${Object.keys(counts).length} 种颜色，共 ${total} 颗`),
+      h('div.preview-wrap', pv),
+      h('div.chips.wrap', Object.entries(counts).sort((a, b) => b[1] - a[1]).map(([code, n]) =>
+        h('button.count-chip', {
+          title: '把这个颜色的所有格子改成另一个色号', onclick: async () => {
+            const to = await pickColor({ title: `把全部 ${code}（${n} 格）改为…`, extra: [{ label: '全部设为空格（不计）', value: '__EMPTY__' }] });
+            if (!to) return;
+            cells = cells.map(row => row.map(x => x === code ? (to === '__EMPTY__' ? null : to) : x));
+            renderResult();
+          },
+        }, swatch(code), ' ×' + n))),
+      h('p.hint', '点上面的色号可以把整种颜色替换成别的色号（例如背景白色 → 设为空格）。'),
+      h('button.btn.primary.full', { onclick: () => onResult(countCells(cells)) }, '使用此结果 →'));
+  };
+
+  const el = h('div.scanner',
+    h('div.row-btns', h('button.btn', { onclick: auto }, '🔍 自动检测网格')),
+    h('div.canvas-wrap', canvas),
+    status,
+    h('div.rc-row', h('label', '列数', colsIn), h('label', '行数', rowsIn)),
+    h('details', h('summary', '微调四角位置'), nudge()),
+    h('label.check', ignore, ' 忽略没有色号文字的空白格'),
+    h('button.btn.primary.full', { onclick: run }, '开始识别'),
+    result);
+  setTimeout(() => { layout(); auto(); }, 0);
+  window.addEventListener('resize', layout, { once: true });
+  return el;
+}
+
+
+// ===== inventory.js =====
+// 库存管理 / 修改库存 / 自创色 / 补豆清单
+
+const view = { tab: 'MARD', letter: '全部', sort: 'code', dir: 1, low: false };
+
+function codesOfTab() {
+  return view.tab === 'MARD' ? MARD.map(c => c.code) : state.custom.map(c => c.code);
+}
+const isLow = code => {
+  const s = state.stock[code] || 0, used = state.consumed[code] || 0;
+  return (s > 0 || used > 0) && s < state.settings.lowThreshold;
+};
+
+function filteredCodes() {
+  let codes = codesOfTab();
+  if (view.tab === 'MARD' && view.letter !== '全部') codes = codes.filter(c => c[0] === view.letter);
+  if (view.low) codes = codes.filter(isLow);
+  const key = view.sort === 'used' ? c => state.consumed[c] || 0 : view.sort === 'qty' ? c => state.stock[c] || 0 : null;
+  if (key) codes = [...codes].sort((a, b) => (key(a) - key(b)) * view.dir);
+  else if (view.dir < 0) codes = [...codes].reverse();
+  return codes;
+}
+
+function filterBar(rerender) {
+  const tabs = h('div.chips',
+    h('button.chip' + (view.low ? '.on-warn' : ''), { onclick: () => { view.low = !view.low; rerender(); } }, '⚠ 低库存'),
+    h('button.chip' + (view.tab === 'MARD' ? '.on-dark' : ''), { onclick: () => { view.tab = 'MARD'; rerender(); } }, `MARD 221 (${countKinds(MARD.map(c => c.code))})`),
+    h('button.chip' + (view.tab === 'CUSTOM' ? '.on-dark' : ''), { onclick: () => { view.tab = 'CUSTOM'; rerender(); } }, `自创色 (${countKinds(state.custom.map(c => c.code))})`),
+  );
+  const letters = view.tab === 'MARD'
+    ? h('div.chips.letters', ['全部', ...'ABCDEFGHM'].map(l =>
+      h('button.chip.sq' + (view.letter === l ? '.on-dark' : ''), { onclick: () => { view.letter = l; rerender(); } }, l)))
+    : null;
+  return [tabs, letters];
+}
+const countKinds = codes => codes.filter(c => (state.stock[c] || 0) > 0).length;
+
+function sortBtn(label, key, rerender) {
+  const on = view.sort === key;
+  return h('button.sort' + (on ? '.on' : ''), {
+    onclick: () => { if (on) view.dir = -view.dir; else { view.sort = key; view.dir = key === 'code' ? 1 : -1; } rerender(); },
+  }, label, h('span', on ? (view.dir > 0 ? ' ↑' : ' ↓') : ' ⇅'));
+}
+
+// ---------------- 库存管理 ----------------
+function renderStock(root, go) {
+  const rerender = () => renderStock(root, go);
+  const codes = codesOfTab();
+  const total = codes.reduce((s, c) => s + Math.max(0, state.stock[c] || 0), 0);
+  const kinds = countKinds(codes);
+  const lowKinds = codes.filter(isLow).length;
+  const outTotal = codes.reduce((s, c) => s + (state.consumed[c] || 0), 0);
+  const outKinds = codes.filter(c => (state.consumed[c] || 0) > 0).length;
+  const outN = state.logs.filter(l => l.items.some(i => i.delta < 0 && i.consume)).length;
+  const inN = state.logs.filter(l => l.items.some(i => i.delta > 0)).length;
+
+  const list = h('div.list');
+  const fc = filteredCodes();
+  let group = null;
+  for (const c of fc) {
+    if (view.tab === 'MARD' && view.sort === 'code' && c[0] !== group) {
+      group = c[0];
+      list.append(h('div.group-head', h('b', group), h('span.pill', fc.filter(x => x[0] === group).length)));
+    }
+    const s = state.stock[c] || 0;
+    list.append(h('div.card.stock-row', { onclick: () => quickEdit(c, rerender) },
+      swatch(c, 'big'),
+      h('div.grow', view.tab === 'CUSTOM' ? h('span.muted', colorMap().get(c)?.name || '') : null),
+      h('div.used', { title: '总消耗' }, fmt(state.consumed[c] || 0)),
+      h('div.qty' + (s < 0 ? '.neg' : isLow(c) ? '.warn' : ''), fmt(s))));
+  }
+  if (!fc.length) list.append(h('p.empty', view.tab === 'CUSTOM' && !state.custom.length ? '还没有自创色号，点右上「自创色」添加' : '没有符合条件的色号'));
+
+  root.replaceChildren(
+    h('header.top',
+      h('h1', '库存管理'),
+      h('button.btn.primary', { onclick: () => go('#/edit') }, '⇅ 修改库存'),
+      h('button.icon-btn', { onclick: () => go('#/custom'), title: '自创色' }, '🎨')),
+    h('div.scroll',
+      filterBar(rerender)[0],
+      h('div.stats',
+        stat('豆子总数', fmt(total)), stat('豆子种类总数', kinds), stat('低库存豆子种数', lowKinds, 'warn'),
+        stat('总出库豆子数量', fmt(outTotal), 'red'), stat('总出库豆子种类', outKinds, 'red'),
+        h('div.stat', h('small', h('span.red', '出库'), ' / 入库'), h('b', h('span.red', outN), ' / ', inN))),
+      h('div.sort-bar', sortBtn('按色号', 'code', rerender), h('div.grow'), sortBtn('总消耗', 'used', rerender), sortBtn('按数量', 'qty', rerender)),
+      filterBar(rerender)[1],
+      list));
+}
+const stat = (label, val, cls = '') => h('div.stat', h('small', label), h('b' + (cls ? '.' + cls : ''), val));
+
+// 点某行快速增减
+function quickEdit(code, done) {
+  const input = h('input.input.num', { type: 'number', inputmode: 'numeric', placeholder: '数量' });
+  const apply = async sign => {
+    const n = parseInt(input.value, 10);
+    if (!n) return toast('请输入数量');
+    const delta = sign === 0 ? n - (state.stock[code] || 0) : sign * n;
+    await applyChange({ type: 'adjust', note: '快速修改', items: [{ code, delta, consume: sign < 0 }] });
+    close(); done(); toast('已更新');
+  };
+  const close = sheet(code, [
+    h('div.quick-head', swatch(code, 'big'), h('div', h('div.muted', '当前库存'), h('b.big', fmt(state.stock[code] || 0))),
+      h('div', h('div.muted', '总消耗'), h('b.big', fmt(state.consumed[code] || 0)))),
+    input,
+    h('div.row-btns', [100, 500, 1000].map(n => h('button.btn', { onclick: () => { input.value = (parseInt(input.value, 10) || 0) + n; } }, '+' + n))),
+    h('div.row-btns',
+      h('button.btn.green', { onclick: () => apply(1) }, '增加'),
+      h('button.btn.red', { onclick: () => apply(-1) }, '减少'),
+      h('button.btn', { onclick: () => apply(0) }, '设为')),
+  ]);
+  setTimeout(() => input.focus(), 50);
+}
+
+// ---------------- 修改库存 ----------------
+const draft = {}; // code -> {mode:'+'|'-'|'=', n}
+const modeNext = { '+': '-', '-': '=', '=': '+' };
+const modeLabel = { '+': '增', '-': '减', '=': '设' };
+
+function renderEdit(root, go) {
+  const rerender = () => renderEdit(root, go);
+  const summary = h('div.summary');
+  const note = h('textarea.input', { rows: 1, placeholder: '调整备注 (可选)...' });
+  const updateSummary = () => {
+    const ent = Object.entries(draft).filter(([, d]) => d.n);
+    if (!ent.length) { summary.textContent = '填写修改量后，将在此显示种类数与合计颗数'; return; }
+    let add = 0, sub = 0, set = 0;
+    for (const [, d] of ent) { if (d.mode === '+') add += d.n; else if (d.mode === '-') sub += d.n; else set++; }
+    summary.textContent = `${ent.length} 种 · 增 ${fmt(add)} 颗 · 减 ${fmt(sub)} 颗` + (set ? ` · 设定 ${set} 种` : '');
+  };
+
+  const fc = filteredCodes();
+  const rows = h('div.edit-list');
+  fc.forEach((code, idx) => {
+    const d = draft[code] || (draft[code] = { mode: '+', n: 0 });
+    const modeBtn = h('button.mode.m' + ({ '+': 'add', '-': 'sub', '=': 'set' })[d.mode], {
+      onclick: () => { d.mode = modeNext[d.mode]; rerenderRow(); updateSummary(); },
+    }, modeLabel[d.mode]);
+    const input = h('input.input.num', {
+      type: 'number', inputmode: 'numeric', value: d.n || '', placeholder: '0',
+      oninput: () => { d.n = Math.max(0, parseInt(input.value, 10) || 0); d.typed = input.value !== ''; updateSummary(); },
+    });
+    const rerenderRow = () => {
+      modeBtn.className = 'mode m' + ({ '+': 'add', '-': 'sub', '=': 'set' })[d.mode];
+      modeBtn.textContent = modeLabel[d.mode];
+      input.value = d.n || '';
+    };
+    rows.append(h('div.edit-row',
+      swatch(code),
+      h('div.cur', fmt(state.stock[code] || 0)),
+      modeBtn, input,
+      h('button.btn.sm', {
+        title: '把这一行的修改量填到下面所有行', onclick: () => {
+          for (const c of fc.slice(idx + 1)) draft[c] = { ...d };
+          rerender(); toast('已向下填充');
+        },
+      }, '↓填充'),
+      h('button.btn.sm.green', { onclick: () => { d.n += 500; rerenderRow(); updateSummary(); } }, '+500'),
+      h('button.btn.sm.green.only-wide', { onclick: () => { d.n += 1000; rerenderRow(); updateSummary(); } }, '+1000')));
+  });
+
+  const execute = async () => {
+    const items = [];
+    for (const [code, d] of Object.entries(draft)) {
+      if (!d.n && !(d.mode === '=' && d.typed)) continue;
+      const cur = state.stock[code] || 0;
+      const delta = d.mode === '+' ? d.n : d.mode === '-' ? -d.n : d.n - cur;
+      if (delta) items.push({ code, delta, consume: d.mode === '-' });
+    }
+    if (!items.length) return toast('没有需要修改的内容');
+    const ok = await confirmBox('执行修改', `共 ${items.length} 种色号将被修改，确定吗？`);
+    if (!ok) return;
+    await applyChange({ type: 'adjust', note: note.value.trim(), items });
+    for (const k of Object.keys(draft)) delete draft[k];
+    toast('修改成功');
+    go('#/stock');
+  };
+
+  root.replaceChildren(
+    h('header.top',
+      h('button.icon-btn', { onclick: () => go('#/stock') }, '‹'),
+      h('h1', '修改库存'),
+      h('button.btn', { onclick: () => { for (const k of Object.keys(draft)) delete draft[k]; rerender(); } }, '清空修改')),
+    h('div.scroll',
+      filterBar(rerender),
+      h('p.hint', '点「增」可切换为「减」「设」（设 = 直接设为该数量，适合首次录入库存）'),
+      rows),
+    h('div.bottom-panel',
+      note, summary,
+      h('div.row-btns',
+        h('button.btn', { onclick: () => go('#/restock') }, '生成补豆清单'),
+        h('button.btn.primary.green-bg', { onclick: execute }, '执行修改'))));
+  updateSummary();
+}
+
+// ---------------- 自创色 ----------------
+function renderCustom(root, go) {
+  const rerender = () => renderCustom(root, go);
+  const list = h('div.list');
+  state.custom.forEach((c, i) => {
+    list.append(h('div.card.stock-row', { onclick: () => editCustom(i, rerender) },
+      swatch(c.code, 'big'), h('div.grow', h('div', c.name || ''), h('small.muted', c.hex)),
+      h('div.qty', fmt(state.stock[c.code] || 0))));
+  });
+  if (!state.custom.length) list.append(h('p.empty', '还没有自创色号'));
+  root.replaceChildren(
+    h('header.top',
+      h('button.icon-btn', { onclick: () => go('#/stock') }, '‹'),
+      h('h1', '自创色号'),
+      h('button.btn.primary', { onclick: () => editCustom(-1, rerender) }, '＋ 添加')),
+    h('div.scroll', h('p.hint', '自创色号会和 MARD 一样出现在库存、扫描匹配和项目用量里。'), list));
+}
+
+function editCustom(i, done) {
+  const c = i >= 0 ? state.custom[i] : { code: '', name: '', hex: '#FF88AA' };
+  const code = h('input.input', { value: c.code, placeholder: '色号，如 ZC01', autocapitalize: 'characters' });
+  const name = h('input.input', { value: c.name, placeholder: '名称（可选）' });
+  const pick = h('input.color', { type: 'color', value: c.hex.toLowerCase() });
+  const hex = h('input.input', { value: c.hex, placeholder: '#RRGGBB' });
+  pick.addEventListener('input', () => { hex.value = pick.value.toUpperCase(); });
+  hex.addEventListener('input', () => { if (/^#[0-9a-f]{6}$/i.test(hex.value)) pick.value = hex.value.toLowerCase(); });
+  const save = async () => {
+    const nc = normCode(code.value);
+    if (!nc) return toast('请填写色号');
+    if (!/^#[0-9A-F]{6}$/i.test(hex.value)) return toast('颜色格式应为 #RRGGBB');
+    if (MARD.some(m => m.code === nc)) return toast('不能和 MARD 色号重复');
+    if (state.custom.some((x, j) => x.code === nc && j !== i)) return toast('色号已存在');
+    const item = { code: nc, name: name.value.trim(), hex: hex.value.toUpperCase() };
+    if (i >= 0) {
+      const old = state.custom[i].code;
+      if (old !== nc) renameCode(old, nc);
+      state.custom[i] = item;
+    } else state.custom.push(item);
+    await saveKV('custom', 'stock', 'consumed');
+    close(); done();
+  };
+  const del = async () => {
+    if (!await confirmBox('删除自创色', `删除 ${c.code}？它的库存记录也会删除。`, '删除', true)) return;
+    state.custom.splice(i, 1);
+    delete state.stock[c.code]; delete state.consumed[c.code];
+    await saveKV('custom', 'stock', 'consumed');
+    close(); done();
+  };
+  const close = sheet(i >= 0 ? '编辑自创色' : '添加自创色', [
+    h('label', '色号'), code, h('label', '名称'), name,
+    h('label', '颜色'), h('div.color-row', pick, hex),
+    h('div.row-btns', i >= 0 ? h('button.btn.red', { onclick: del }, '删除') : null, h('button.btn.primary', { onclick: save }, '保存')),
+  ]);
+}
+function renameCode(a, b) {
+  for (const k of ['stock', 'consumed']) if (a in state[k]) { state[k][b] = state[k][a]; delete state[k][a]; }
+}
+
+// ---------------- 补豆清单 ----------------
+function renderRestock(root, go) {
+  const pending = state.projects.filter(p => p.status !== 'done');
+  const sel = new Set(pending.map(p => p.id));
+  const out = h('div');
+  const includeLow = h('input', { type: 'checkbox', checked: true });
+  const render = () => {
+    const need = {};
+    for (const p of pending) if (sel.has(p.id)) for (const [c, n] of Object.entries(p.counts)) need[c] = (need[c] || 0) + n;
+    const lack = shortage(need);
+    const lines = lack.map(l => ({ code: l.code, n: l.lack, why: `需要 ${fmt(l.need)} / 有 ${fmt(l.have)}` }));
+    if (includeLow.checked) {
+      for (const c of colorMap().keys()) {
+        if (isLow(c) && !lines.some(l => l.code === c)) lines.push({ code: c, n: state.settings.lowThreshold - (state.stock[c] || 0), why: '低库存' });
+      }
+    }
+    lines.sort((a, b) => a.code.localeCompare(b.code));
+    out.replaceChildren(
+      lines.length ? h('div.list', lines.map(l => h('div.card.stock-row', swatch(l.code), h('div.grow.muted', l.why), h('div.qty.red', '缺 ' + fmt(l.n)))))
+        : h('p.empty', '🎉 库存充足，不需要补豆'),
+      lines.length ? h('button.btn.primary.full', {
+        onclick: () => copyText('补豆清单\n' + lines.map(l => `${l.code}  ${l.n} 颗（${l.why}）`).join('\n')),
+      }, '复制清单') : null);
+  };
+  includeLow.addEventListener('change', render);
+  root.replaceChildren(
+    h('header.top', h('button.icon-btn', { onclick: () => history.back() }, '‹'), h('h1', '补豆清单')),
+    h('div.scroll',
+      h('p.hint', '根据选中的待拼/正在拼项目所需用量减去当前库存计算。'),
+      pending.length ? h('div.chips.wrap', pending.map(p => {
+        const b = h('button.chip.on', { onclick: () => { sel.has(p.id) ? sel.delete(p.id) : sel.add(p.id); b.classList.toggle('on'); render(); } }, p.name);
+        return b;
+      })) : h('p.muted', '没有待拼项目'),
+      h('label.check', includeLow, ' 同时列出低库存色号（补到阈值 ' + state.settings.lowThreshold + '）'),
+      out));
+  render();
+}
+
+
+// ===== projects.js =====
+// 我的项目：列表 / 新建+扫描 / 详情 / 拼好扣库存
+
+const STATUS = { todo: '待拼', doing: '正在拼', done: '已拼' };
+const pv = { filter: 'all', layout: 'grid', q: '', canDo: false };
+
+const totalOf = counts => Object.values(counts).reduce((a, b) => a + b, 0);
+const canDo = p => shortage(p.counts).length === 0;
+
+async function makeThumb(blob) {
+  const img = await loadImage(blob);
+  const k = Math.min(1, 360 / Math.max(img.naturalWidth, img.naturalHeight));
+  const c = h('canvas', { width: Math.round(img.naturalWidth * k), height: Math.round(img.naturalHeight * k) });
+  c.getContext('2d').drawImage(img, 0, 0, c.width, c.height);
+  return c.toDataURL('image/jpeg', 0.8);
+}
+
+// ---------------- 列表 ----------------
+function renderProjects(root, go) {
+  const rerender = () => renderProjects(root, go);
+  const n = s => state.projects.filter(p => p.status === s).length;
+  const tab = (key, label, val) => h('button.tab' + (pv.filter === key ? '.on' : ''), { onclick: () => { pv.filter = key; rerender(); } }, h('b', val), h('small', label));
+
+  let list = state.projects;
+  if (pv.filter !== 'all') list = list.filter(p => p.status === pv.filter);
+  if (pv.canDo) list = list.filter(p => p.status !== 'done' && canDo(p));
+  if (pv.q) list = list.filter(p => p.name.includes(pv.q) || Object.keys(p.counts).some(c => c.includes(pv.q.toUpperCase())));
+
+  const search = h('input.input', { placeholder: '搜索名称或色号', value: pv.q });
+  search.addEventListener('change', () => { pv.q = search.value.trim(); rerender(); });
+
+  const items = list.map(p => {
+    const lack = p.status !== 'done' ? shortage(p.counts).length : 0;
+    const badge = h('span.badge.s-' + p.status, STATUS[p.status]);
+    const meta = h('small.muted', `${Object.keys(p.counts).length} 色 · ${fmt(totalOf(p.counts))} 颗`);
+    const warn = p.status !== 'done' ? (lack ? h('small.red', `缺 ${lack} 色`) : h('small.green', '✓ 可拼')) : null;
+    return pv.layout === 'grid'
+      ? h('div.pcard', { onclick: () => go('#/project/' + p.id) }, h('div.thumb', p.thumb ? h('img', { src: p.thumb, alt: '' }) : '🧩', badge), h('b.pname', p.name), meta, warn)
+      : h('div.card.prow', { onclick: () => go('#/project/' + p.id) }, h('div.thumb.sm', p.thumb ? h('img', { src: p.thumb, alt: '' }) : '🧩'), h('div.grow', h('b', p.name), h('div', meta, ' ', warn)), badge);
+  });
+
+  root.replaceChildren(
+    h('header.top', h('h1', '我的项目')),
+    h('div.scroll',
+      h('div.tabs', tab('done', '已拼图纸', n('done')), tab('doing', '正在拼', n('doing')), tab('todo', '待拼图纸', n('todo')), tab('all', '累计图纸', state.projects.length)),
+      h('div.toolbar',
+        h('div.seg',
+          h('button' + (pv.layout === 'grid' ? '.on' : ''), { onclick: () => { pv.layout = 'grid'; rerender(); } }, '▦'),
+          h('button' + (pv.layout === 'list' ? '.on' : ''), { onclick: () => { pv.layout = 'list'; rerender(); } }, '☰')),
+        search,
+        h('button.btn.primary.new', { onclick: () => go('#/new') }, '＋ 新建')),
+      h('div.chips', h('button.chip' + (pv.canDo ? '.on' : ''), { onclick: () => { pv.canDo = !pv.canDo; rerender(); } }, '可拼'),
+        h('button.chip', { onclick: () => go('#/restock') }, '补豆清单')),
+      items.length ? h('div.' + (pv.layout === 'grid' ? 'pgrid' : 'list'), items)
+        : h('p.empty', state.projects.length ? '没有符合条件的项目' : '还没有图纸，点「＋ 新建」添加一张待拼图纸吧')));
+}
+
+// ---------------- 新建 / 编辑用量 ----------------
+function renderNew(root, go, editId) {
+  const editing = editId ? state.projects.find(p => p.id === editId) : null;
+  const draft = {
+    name: editing?.name || '',
+    image: editing?.image || null,
+    counts: { ...(editing?.counts || {}) },
+  };
+  const body = h('div');
+
+  const nameIn = h('input.input', { placeholder: '图纸名称', value: draft.name });
+  nameIn.addEventListener('input', () => { draft.name = nameIn.value; });
+  const file = h('input', { type: 'file', accept: 'image/*', hidden: true });
+  const imgBox = h('div.img-box');
+  file.addEventListener('change', async () => {
+    const f = file.files[0];
+    if (!f) return;
+    draft.image = f;
+    if (!draft.name) { draft.name = f.name.replace(/\.[^.]+$/, '').slice(0, 30); nameIn.value = draft.name; }
+    showImg();
+    mode('grid');
+  });
+  const showImg = () => {
+    imgBox.replaceChildren(draft.image
+      ? h('img', { src: URL.createObjectURL(draft.image), alt: '图纸', title: '点击更换图片', onclick: () => file.click() })
+      : h('button.upload', { onclick: () => file.click() }, h('b', '＋'), h('div', '选择图纸图片（相册/截图/拍照）')));
+  };
+  showImg();
+
+  const methodTabs = h('div.seg.full');
+  const methodBody = h('div');
+  let cur = null;
+  const mode = async m => {
+    cur = m;
+    methodTabs.replaceChildren(...[['grid', '格子识别'], ['ocr', '用量表OCR'], ['manual', '手动/校对']].map(([k, l]) =>
+      h('button' + (k === m ? '.on' : ''), { onclick: () => mode(k) }, l)));
+    if (m !== 'manual' && !draft.image) { methodBody.replaceChildren(h('p.hint', '先选择图纸图片。')); return; }
+    if (m === 'grid') {
+      methodBody.replaceChildren(h('p.muted', '加载图片…'));
+      const img = await loadImage(draft.image);
+      if (cur !== 'grid') return;
+      methodBody.replaceChildren(gridScanner(img, counts => { draft.counts = counts; mode('manual'); toast('已导入识别结果，请校对'); }));
+    } else if (m === 'ocr') {
+      const prog = h('progress', { max: 1, value: 0 });
+      const out = h('div');
+      const img = await loadImage(draft.image);
+      if (cur !== 'ocr') return;
+      const crop = cropSelector(img);
+      const run = async () => {
+        out.replaceChildren(h('p.muted', '识别中…（首次使用需下载约 10MB 的识别数据）'), prog);
+        try {
+          const counts = await ocrLegend(draft.image, p => { prog.value = p; }, crop.rect());
+          const n = Object.keys(counts).length;
+          if (!n) { out.replaceChildren(h('p.red', '没有找到「色号 + 数量」格式的文字。可以试试格子识别，或手动输入。')); return; }
+          draft.counts = counts;
+          toast(`识别到 ${n} 种颜色，请校对`);
+          mode('manual');
+        } catch (e) { out.replaceChildren(h('p.red', e.message)); }
+      };
+      methodBody.replaceChildren(
+        h('p.hint', '适合图纸上带有用量统计表（如「A01 ×120」）的情况。在图上拖动，框住统计表区域（不要框到网格），识别更准。'),
+        crop.el,
+        h('button.btn.primary.full', { onclick: run }, '识别框内文字'), out);
+    } else {
+      methodBody.replaceChildren(countsEditor(draft.counts));
+    }
+  };
+
+  const save = async () => {
+    const name = draft.name.trim() || '未命名图纸';
+    const counts = Object.fromEntries(Object.entries(draft.counts).filter(([, n]) => n > 0));
+    if (!Object.keys(counts).length && !await confirmBox('还没有用量', '这张图纸还没有任何色号用量，仍然保存吗？')) return;
+    const p = editing || { id: uid(), status: 'todo', created: Date.now(), doneLogId: null };
+    p.name = name;
+    p.counts = counts;
+    if (draft.image && draft.image !== p.image) { p.image = draft.image; p.thumb = await makeThumb(draft.image); }
+    await saveProject(p);
+    toast(editing ? '已保存' : '已添加到待拼');
+    go('#/project/' + p.id, true);
+  };
+
+  body.append(
+    h('label', '名称'), nameIn,
+    h('label', '图纸'), imgBox, file,
+    h('label', '识别用量'), methodTabs, methodBody);
+  root.replaceChildren(
+    h('header.top', h('button.icon-btn', { onclick: () => history.back() }, '‹'), h('h1', editing ? '编辑图纸' : '新建待拼图纸')),
+    h('div.scroll', body),
+    h('div.bottom-panel', h('button.btn.primary.full', { onclick: save }, editing ? '保存' : '保存到待拼')));
+  mode(editing || !draft.image ? 'manual' : 'grid');
+}
+
+// 可编辑的「色号 × 颗数」列表（直接修改传入的 counts 对象）
+function countsEditor(counts) {
+  const el = h('div.counts-editor');
+  const render = () => {
+    const entries = Object.entries(counts).sort((a, b) => a[0].localeCompare(b[0]));
+    const total = entries.reduce((s, [, n]) => s + n, 0);
+    el.replaceChildren(
+      h('div.summary', `${entries.length} 种颜色 · 共 ${fmt(total)} 颗`),
+      ...entries.map(([code, n]) => {
+        const input = h('input.input.num', { type: 'number', inputmode: 'numeric', value: n, min: 0, 'data-code': code });
+        input.addEventListener('input', () => { counts[code] = Math.max(0, parseInt(input.value, 10) || 0); });
+        input.addEventListener('change', render);
+        const have = state.stock[code] || 0;
+        return h('div.edit-row',
+          h('button.plain', {
+            title: '更换色号', onclick: async () => {
+              const to = await pickColor({ title: `把 ${code} 改为…` });
+              if (!to || to === code) return;
+              counts[to] = (counts[to] || 0) + counts[code];
+              delete counts[code];
+              render();
+            },
+          }, swatch(code)),
+          h('small' + (have < n ? '.red' : '.muted'), '库存 ' + fmt(have)),
+          h('div.grow'),
+          input,
+          h('button.icon-btn.sm', { onclick: () => { delete counts[code]; render(); }, 'aria-label': '删除' }, '✕'));
+      }),
+      h('button.btn.full', {
+        onclick: async () => {
+          const code = await pickColor({ title: '添加色号' });
+          if (!code) return;
+          if (!(code in counts)) counts[code] = 0;
+          render();
+          el.querySelector(`input[data-code="${CSS.escape(code)}"]`)?.focus();
+        },
+      }, '＋ 添加色号'),
+      h('p.hint', '点色号可换成其他色号（识别错时用）；修改数字后自动生效。'));
+  };
+  render();
+  return el;
+}
+
+// ---------------- 详情 ----------------
+function renderProject(root, go, id) {
+  const p = state.projects.find(x => x.id === id);
+  if (!p) { go('#/projects', true); return; }
+  const rerender = () => renderProject(root, go, id);
+  const entries = Object.entries(p.counts).sort((a, b) => a[0].localeCompare(b[0]));
+  const lack = shortage(p.counts);
+  const imgUrl = p.image instanceof Blob ? URL.createObjectURL(p.image) : p.thumb;
+
+  const finish = async () => {
+    const msg = h('div',
+      h('p', `将从库存扣除 ${entries.length} 种颜色，共 ${fmt(totalOf(p.counts))} 颗：`),
+      h('div.chips.wrap', entries.map(([c, n]) => h('span.count-chip', swatch(c), ' -' + n))),
+      lack.length ? h('p.red', `⚠ 有 ${lack.length} 种颜色库存不够，扣除后会变成负数。`) : null);
+    if (!await confirmBox('拼好了！', msg, '确认扣除库存')) return;
+    await finishProject(p);
+    toast('🎉 已完成，库存已扣除');
+    rerender();
+  };
+  const undo = async () => {
+    if (!await confirmBox('撤销完成', '把扣除的豆子加回库存，并把项目改回「正在拼」？')) return;
+    if (p.doneLogId) await undoLog(p.doneLogId);
+    else { p.status = 'doing'; await saveProject(p); }
+    toast('已撤销'); rerender();
+  };
+  const setStatus = async s => { p.status = s; await saveProject(p); rerender(); };
+  const del = async () => {
+    if (!await confirmBox('删除图纸', `删除「${p.name}」？（不会影响库存）`, '删除', true)) return;
+    await deleteProject(p.id);
+    go('#/projects', true);
+  };
+
+  root.replaceChildren(
+    h('header.top',
+      h('button.icon-btn', { onclick: () => go('#/projects') }, '‹'),
+      h('h1', p.name),
+      h('button.btn', { onclick: () => go('#/new/' + p.id) }, '编辑')),
+    h('div.scroll',
+      imgUrl ? h('div.img-box', { onclick: () => sheet(p.name, h('img.full-img', { src: imgUrl, alt: '' })) }, h('img', { src: imgUrl, alt: p.name })) : null,
+      h('div.status-row', ['todo', 'doing', 'done'].map(s => h('span.badge.s-' + s + (p.status === s ? '' : '.dim'), STATUS[s]))),
+      h('div.stats',
+        h('div.stat', h('small', '颜色'), h('b', entries.length)),
+        h('div.stat', h('small', '总颗数'), h('b', fmt(totalOf(p.counts)))),
+        h('div.stat', h('small', '缺色'), h('b' + (lack.length && p.status !== 'done' ? '.red' : ''), p.status === 'done' ? '-' : lack.length))),
+      h('div.list', entries.map(([code, n]) => {
+        const have = state.stock[code] || 0;
+        const short = p.status !== 'done' && have < n;
+        return h('div.card.stock-row', swatch(code), h('div.grow.muted', '库存 ' + fmt(have)),
+          short ? h('small.red', '缺 ' + fmt(n - have)) : null, h('div.qty', '×' + fmt(n)));
+      })),
+      !entries.length ? h('p.empty', '还没有用量，点右上「编辑」扫描图纸') : null,
+      h('button.btn.red.full.mt', { onclick: del }, '删除图纸')),
+    h('div.bottom-panel',
+      p.status === 'done'
+        ? h('div.row-btns', h('div.done-note', '✓ 已拼好' + (p.doneAt ? ' · ' + new Date(p.doneAt).toLocaleDateString() : '')), h('button.btn', { onclick: undo }, '撤销完成'))
+        : h('div.row-btns',
+          p.status === 'todo' ? h('button.btn', { onclick: () => setStatus('doing') }, '开始拼') : h('button.btn', { onclick: () => setStatus('todo') }, '改回待拼'),
+          h('button.btn.primary.green-bg', { onclick: finish, disabled: !entries.length }, '拼好了 · 扣库存'))));
+}
+
+// ===== app.js =====
+// 入口：路由 + 设置页 + 出入库记录
+
+const root = document.getElementById('page');
+const nav = document.getElementById('nav');
+
+function go(hash, replace = false) {
+  if (replace) location.replace(hash); else location.hash = hash;
+}
+
+function route() {
+  const [, page, arg] = (location.hash || '#/stock').split('/');
+  nav.querySelectorAll('a').forEach(a => a.classList.toggle('on', a.dataset.tab === tabOf(page)));
+  root.scrollTop = 0;
+  switch (page) {
+    case 'edit': return renderEdit(root, go);
+    case 'custom': return renderCustom(root, go);
+    case 'restock': return renderRestock(root, go);
+    case 'projects': return renderProjects(root, go);
+    case 'new': return renderNew(root, go, arg);
+    case 'project': return renderProject(root, go, arg);
+    case 'settings': return renderSettings();
+    case 'logs': return renderLogs();
+    default: return renderStock(root, go);
+  }
+}
+const tabOf = p => ['projects', 'new', 'project'].includes(p) ? 'projects' : ['settings', 'logs'].includes(p) ? 'settings' : 'stock';
+
+function renderSettings() {
+  const thr = h('input.input.num', { type: 'number', inputmode: 'numeric', value: state.settings.lowThreshold });
+  thr.addEventListener('change', async () => {
+    state.settings.lowThreshold = Math.max(0, parseInt(thr.value, 10) || 0);
+    await saveKV('settings'); toast('已保存');
+  });
+  const file = h('input', { type: 'file', accept: 'application/json,.json', hidden: true });
+  file.addEventListener('change', async () => {
+    const f = file.files[0];
+    if (!f) return;
+    if (!await confirmBox('导入备份', '导入会覆盖当前所有数据，确定吗？', '导入', true)) return;
+    try { await importBackup(await f.text()); toast('导入成功'); go('#/stock'); }
+    catch (e) { toast('导入失败：' + e.message); }
+  });
+  const backup = async () => {
+    const d = new Date();
+    downloadBlob(await exportBackup(), `拼豆备份-${d.getFullYear()}${String(d.getMonth() + 1).padStart(2, '0')}${String(d.getDate()).padStart(2, '0')}.json`);
+    state.settings.lastBackup = Date.now();
+    saveKV('settings');
+  };
+  const wipe = async () => {
+    if (!await confirmBox('清空全部数据', '库存、自创色、图纸、记录都会被删除，无法恢复！建议先导出备份。', '全部清空', true)) return;
+    await clearAll(); toast('已清空'); go('#/stock');
+  };
+  root.replaceChildren(
+    h('header.top', h('h1', '我的')),
+    h('div.scroll',
+      h('div.card.set',
+        h('b', '低库存提醒'),
+        h('p.muted', '库存低于这个数量的色号会被标记为「低库存」。'),
+        thr),
+      h('div.card.set',
+        h('b', '数据备份'),
+        h('p.muted', '数据只保存在这台手机的浏览器里。清除浏览器数据会丢失，请定期导出备份。' +
+          (state.settings.lastBackup ? `上次备份：${new Date(state.settings.lastBackup).toLocaleString()}` : '还没有备份过。')),
+        h('div.row-btns', h('button.btn.primary', { onclick: backup }, '导出备份'), h('button.btn', { onclick: () => file.click() }, '导入备份')), file),
+      h('div.card.set.link', { onclick: () => go('#/logs') }, h('b', '出入库记录'), h('span.muted', `${state.logs.length} 条 ›`)),
+      h('div.card.set.link', { onclick: () => go('#/custom') }, h('b', '自创色号'), h('span.muted', `${state.custom.length} 个 ›`)),
+      h('div.card.set',
+        h('b', '安装到手机桌面'),
+        h('p.muted', '安卓 Chrome：右上角菜单 →「添加到主屏幕 / 安装应用」。iPhone Safari：分享 →「添加到主屏幕」。安装后可离线使用。')),
+      h('button.btn.red.full', { onclick: wipe }, '清空全部数据'),
+      h('p.hint.center', '拼豆仓库 · MARD 221 色 + 自创色')));
+}
+
+const TYPE = { adjust: '修改库存', project: '拼好扣除' };
+function renderLogs() {
+  const list = state.logs.map(l => {
+    const add = l.items.filter(i => i.delta > 0).reduce((s, i) => s + i.delta, 0);
+    const sub = -l.items.filter(i => i.delta < 0).reduce((s, i) => s + i.delta, 0);
+    const body = h('div.log-items', l.items.slice(0, 40).map(i => h('span.count-chip', swatch(i.code), (i.delta > 0 ? ' +' : ' ') + i.delta)),
+      l.items.length > 40 ? h('small.muted', `…共 ${l.items.length} 种`) : null);
+    return h('div.card.log',
+      h('div.log-head',
+        h('b', TYPE[l.type] || l.type),
+        h('small.muted', new Date(l.time).toLocaleString()),
+        h('div.grow'),
+        h('button.btn.xs', {
+          onclick: async () => {
+            if (!await confirmBox('撤销这条记录', '库存会恢复到这条记录之前的变化（其他记录不受影响）。' + (l.projectId ? '对应图纸会改回「正在拼」。' : ''))) return;
+            await undoLog(l.id); toast('已撤销'); renderLogs();
+          },
+        }, '撤销')),
+      l.note ? h('div', l.note) : null,
+      h('div.muted', `${l.items.length} 种` + (add ? ` · +${fmt(add)}` : '') + (sub ? ` · -${fmt(sub)}` : '')),
+      body);
+  });
+  root.replaceChildren(
+    h('header.top', h('button.icon-btn', { onclick: () => go('#/settings') }, '‹'), h('h1', '出入库记录')),
+    h('div.scroll', list.length ? list : h('p.empty', '还没有记录')));
+}
+
+(async () => {
+  try { await loadAll(); }
+  catch (e) { root.replaceChildren(h('p.empty', '数据加载失败：' + e.message)); return; }
+  window.addEventListener('hashchange', route);
+  route();
+  if ('serviceWorker' in navigator && location.protocol !== 'file:') navigator.serviceWorker.register('sw.js').catch(() => {});
+  if (navigator.storage?.persist) navigator.storage.persist().catch(() => {});
+})();
+</script>
+</body>
+</html>
